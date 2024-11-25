@@ -13,7 +13,7 @@ import { catalogBtn } from "./module/catalogBtn.js";
 import{catalogSlider} from "./module/catalogSlider.js"
 import {reviewsSlider1} from "./module/reviewsSlider1.js"
 import {stageSlider} from "./module/stageSlider.js"
-// import { testWebP } from "./module/testWebP.js";
+import { testWebP } from "./module/testWebP.js";
 document.querySelectorAll('.section6-list').forEach(function(item) {
     item.addEventListener('click', function() {
         this.classList.toggle('active'); // Добавляем/удаляем класс "active" при клике
@@ -21,14 +21,14 @@ document.querySelectorAll('.section6-list').forEach(function(item) {
 });
 
 
-// testWebP(function (support) {
-//     if (support == true) {
-//       document.querySelector('body').classList.add('webp');
-//       console.log("выполнился webp")
-//     }else{
-//       document.querySelector('body').classList.add('no-webp');
-//     }
-//   });
+testWebP(function (support) {
+    if (support == true) {
+      document.querySelector('body').classList.add('webp');
+      console.log("выполнился webp")
+    }else{
+      document.querySelector('body').classList.add('no-webp');
+    }
+  });
 // function toggle(selected) {
 //     const options = document.querySelectorAll('.toggle-option');
 //     options.forEach(option => {
