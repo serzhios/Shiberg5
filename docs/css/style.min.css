@@ -5953,8 +5953,9 @@ body {
   align-items: center;
   text-align: center;
 }
-.box-logo .link-logo .logo-img {
+.box-logo .link-logo img {
   width: 100%;
+  height: 100%;
 }
 .box-logo .link-logo:focus {
   outline: none;
