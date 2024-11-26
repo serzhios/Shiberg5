@@ -6126,6 +6126,7 @@ body {
 }
 .card-cat .cat-block .cat-img {
   width: 100%;
+  height: 100%;
 }
 .card-cat .cat-desc span {
   padding-left: 10px;
