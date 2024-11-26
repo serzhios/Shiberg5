@@ -6134,6 +6134,9 @@ body {
   text-align: center;
   justify-content: center;
 }
+.card-cat .cat-block {
+  width: 100%;
+}
 .card-cat .cat-desc span {
   padding-left: 10px;
 }
