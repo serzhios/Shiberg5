@@ -6,7 +6,7 @@ import { categoryMain1 } from "./module/categoryMain1.js";
 import{documMain1} from "./module/documMain1.js"
 import { thumbnailMain } from "./module/thumbnailMain.js";
 import{sliderMain4} from "./module/sliderMain4.js"
-import { kwis } from "./module/kwis.js";
+// import { kwis } from "./module/kwis.js";
 import {dropdownMenu} from "./module/dropdownMenu.js"
 // import { delyveryToggle } from "./module/delyvery.js";
 import { catalogBtn } from "./module/catalogBtn.js";
@@ -50,6 +50,43 @@ testWebP(function (support) {
 //     });
 // });
 // toggle()
+
+
+
+let currentQuestion = 0; // Индекс текущего вопроса
+const questions = document.querySelectorAll(".kwis-conteiner"); // Выбираем все вопросы
+const nextBtn = document.getElementById("kwis-button"); // Кнопка "Далее"
+
+// Функция для отображения текущего вопроса
+export function kwis(index) {
+  questions.forEach((q, i) => {
+    // Показываем только текущий вопрос, остальные скрываем
+    q.style.display = i === index ? "block" : "none";
+  });
+
+  // Изменяем текст кнопки: "Далее" или "Получить подбор" для последнего вопроса
+  nextBtn.textContent =
+    index === questions.length - 2 ? "Отпраить" : "Далее";
+  nextBtn.textContent =
+    index === questions.length - 1 ? "" : "Далее";
+}
+
+// Слушатель события для кнопки "Далее"
+nextBtn.addEventListener("click", () => {
+  if (currentQuestion < questions.length - 1) {
+    // Переключаемся на следующий вопрос
+    currentQuestion++;
+    kwis(currentQuestion);
+  } else {
+    // Логика для последнего вопроса (например, отправка данных)
+    console.log("Ваши ответы отправлены!");
+    // Здесь вы можете добавить другую логику, например, отправить данные
+  }
+});
+
+// Изначально отображаем первый вопрос
+kwis(currentQuestion);
+
 answerMain1()
 sliderMain1()
 sliderMain2()
