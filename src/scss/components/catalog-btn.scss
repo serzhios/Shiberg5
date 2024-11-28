@@ -1,0 +1,51 @@
+.catalog-btn{
+// display: flex;
+// flex-direction: column;
+    border: 1px solid rgba(6, 130, 142, 0.6);
+border-radius: 2px;
+padding: 6px 16px;
+// padding-left: 16px;
+// padding-right: 16px;
+display: inline-block; /* Делает кнопку блочным элементом, но который может стоять рядом с другими элементами */
+text-align: center; /* Выравнивание текста по центру */
+white-space: nowrap;
+height: 33px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+color: rgba(31, 30, 30, 0.6);
+position:relative;
+}
+.catalog-btn.selected {
+    background-color: #87c1d9;
+    color: #fff;
+}
+.catalog-btn:hover {
+    background-color: #e3f3fa;
+}
+.catalog-btn.active {
+    background-color: #87c1d9;
+    color: #fff;
+    // padding-left: 10px;
+
+}
+.catalog-btn.active::before, .catalog-btn.active:after {
+    // background-color: #87c1d9;
+    content: '';
+            position: absolute;
+            top: 45%; /* позиция пересечения */
+            left: 0;
+            width: 15px;
+            height: 3.13px; /* толщина линий */
+            background-color: #fff;
+        //     margin-left: 10px;
+        // padding: 10px;
+        //    margin-right: 10px;
+
+}
+.catalog-btn.active::before{
+    transform: rotate(45deg);
+}
+.catalog-btn.active::after{
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,37 @@
+.contact-icons {
+    display: flex;
+    align-items: center;
+    // display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .contract-icons-link {
+      border: 1px solid var(--color-fon-2);
+      border-radius: .62rem;
+      width: 3.31rem;
+      height: 3.31rem;
+      display: flex;
+
+      // display: grid;
+      // grid-template-columns: 1fr 1fr;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .contract-icons-link:nth-child(2n) {
+    //   margin-right: 10px;
+    }
+
+    .contact-icons a {
+      margin-right: 15px;
+      font-size: 24px;
+      text-decoration: none;
+      color: var(--color-wite);
+
+
+      .contact-icons a:hover {
+        transform: scale(1.1);
+      }
+    }
+  }

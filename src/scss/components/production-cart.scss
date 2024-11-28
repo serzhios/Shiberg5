@@ -1,0 +1,41 @@
+// .production__cart
+
+.production__cart {
+    border-radius: 15px;
+    // width: 262px;
+    // height: 128px;
+    box-shadow: 2px 2px 17px 0 rgba(0, 0, 0, 0.12);
+    background: #fff;
+    padding: 21px 48px 24px 20px;
+
+    text-align: left;
+
+
+    &-block {
+        display: flex;
+        flex-direction: column;
+        // gap: 20px;
+
+        &-title {
+            font-family: var(--second-family);
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 159%;
+            color: #06828e;
+            // margin-bottom: 20px;
+
+
+        }
+
+        &-text {
+            // text-align: left;
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 131%;
+            color: #000;
+
+        }
+    }
+
+}
