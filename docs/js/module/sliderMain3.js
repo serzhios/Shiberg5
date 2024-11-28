@@ -1,12 +1,12 @@
 export function sliderMain3(){
-    if(document.querySelector("#section6-swiper")){
-        var swiper = new Swiper("#section6-swiper", {
+    if(document.querySelectorAll(".section6__swiper")){
+        var swiper = new Swiper(".section6__swiper", {
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
             navigation: {
-              nextEl: "#section6-swiper-button-next",
-              prevEl: "#section6-swiper-button-prev",
+              nextEl: ".swiper-button-next ",
+              prevEl: ".swiper-button-prev",
 
             },
           });
