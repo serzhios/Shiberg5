@@ -14,6 +14,7 @@ import{catalogSlider} from "./module/catalogSlider.js"
 import {reviewsSlider1} from "./module/reviewsSlider1.js"
 import {stageSlider} from "./module/stageSlider.js"
 import { testWebP } from "./module/testWebP.js";
+import {Mini} from "./module/mini.js"
 document.querySelectorAll('.section6-list').forEach(function(item) {
     item.addEventListener('click', function() {
         this.classList.toggle('active'); // Добавляем/удаляем класс "active" при клике
@@ -66,7 +67,7 @@ export function kwis(index) {
 
   // Изменяем текст кнопки: "Далее" или "Получить подбор" для последнего вопроса
   nextBtn.textContent =
-    index === questions.length - 2 ? "Отпраить" : "Далее";
+    index === questions.length - 2 ? "Отправить" : "Далее";
   nextBtn.textContent =
     index === questions.length - 1 ? "" : "Далее";
 }
@@ -102,3 +103,4 @@ catalogBtn()
 catalogSlider()
 reviewsSlider1()
 stageSlider()
+Mini()
