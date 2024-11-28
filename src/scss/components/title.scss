@@ -1,0 +1,15 @@
+.text-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+    .text {
+        padding-left: 9px;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 0.88rem;
+        line-height: 157%;
+        color: #000;
+    }
+}

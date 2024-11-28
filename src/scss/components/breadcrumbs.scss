@@ -1,0 +1,22 @@
+.reviews-breadcrumbs {
+    text-align: left;
+    .reviews-breadcrumbs__item1 {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 129%;
+        color: #6b7170;
+    }
+.reviews-breadcrumbs__line{
+    width: 8px;
+height: 1px;
+color: #06828e;
+}
+    .reviews-breadcrumbs__item2 {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 129%;
+        color: #000;
+    }
+}

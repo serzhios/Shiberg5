@@ -1,0 +1,41 @@
+.production__item {
+
+    // .production__item
+
+
+    // .production__item-block
+
+    &-block {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        &-img {
+            border-radius: 10px;
+            &:hover{
+                border-radius: 20px;
+                // box-shadow: inset 0 0 0 4px rgba(21, 34, 42, 0.5);
+            border: 10px solid rgba(21, 34, 42, 0.5);
+
+            }
+        }
+
+        &-title {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 105%;
+            color: #06828e;
+            margin: 20px 0 15px 0;
+        }
+
+        &-text {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: #000;
+        }
+    }
+
+}
+
