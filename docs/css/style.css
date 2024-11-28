@@ -2013,9 +2013,8 @@
 .main .section6-main .section6-conteiner .section6-content .section6__up .section6__left {
   width: 100%;
 }
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__left .section6-wrapper .custom-card-swiper6 {
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__left .section6__swiper .section6-wrapper .custom-card-swiper6 {
   position: relative;
-  overflow: hidden;
   background-color: #e8dada;
   /* Задний фон блока */
   clip-path: polygon(0% 0%, 80% 0, 100% 20%, 100% 100%, 20% 100%, 0 80%, 0% 0%);
@@ -2026,13 +2025,16 @@
   /* Контент внизу блока */
   justify-content: center;
 }
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__left .section6-wrapper .custom-card-swiper6 .custom-card__image6 {
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__left .section6__swiper .section6-wrapper .custom-card-swiper6 .custom-card__image6 {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__left #section6-swiper-button-next,
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__left #section6-swiper-button-prev {
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__left .section6__swiper .section6-wrapper .active {
+  display: block;
+}
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__left .section6__swiper #section6-swiper-button-next,
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__left .section6__swiper #section6-swiper-button-prev {
   color: var(--color-wite);
   /* Красный цвет кнопок */
 }
@@ -2060,6 +2062,34 @@
   padding-bottom: 60px;
 }
 .main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-item .section6-list {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-item .outer-square {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-item .outer-square .inner-square {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-item .outer-square .inner-square .inner-square::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-item .section6-list {
   position: relative;
   font-family: var(--second-family);
   font-weight: 700;
@@ -2071,32 +2101,6 @@
   padding: 5px 0;
   cursor: pointer;
   gap: 15px;
-}
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-item .section6-list:active::before {
-  content: "2";
-  margin-left: 5px;
-  color: red;
-  list-style-type: disc;
-  /* Заглушка для псевдоэлемента */
-  position: absolute;
-  left: -20px;
-  /* Смещение маркера влево */
-  top: 0;
-  right: 10px;
-  width: 0;
-  height: 100%;
-  border-left: 5px solid transparent;
-  /* Прозрачный маркер по умолчанию */
-  transition: all 0.3s ease;
-  list-style-type: disc;
-  /* Включаем маркер для активных элементов */
-  list-style-position: inside;
-  /* Маркер внутри элемента */
-  /* Отступ для маркера */
-  /* Плавный переход */
-}
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-item .section6-list:active::before li {
-  padding-left: 20px;
 }
 .main .section6-main .section6-conteiner .section6-content .section6__down {
   padding-top: 95px;
@@ -5749,6 +5753,41 @@
   font-size: 14px;
   line-height: 150%;
   color: #000;
+}
+
+.main {
+  max-height: 100%;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-left {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-left .cart-left-block {
+  position: relative;
+  grid-column: 1;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-left .cart-left-block .cart-left-block img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-left .cart-left-block .new-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: teal;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-left .cart-right-block {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  gap: 10px;
 }
 
 html {
