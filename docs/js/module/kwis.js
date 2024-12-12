@@ -11,7 +11,7 @@ export function kwis(index) {
 
   // Изменяем текст кнопки: "Далее" или "Получить подбор" для последнего вопроса
   nextBtn.textContent =
-    index === questions.length - 1 ? "Получить подбор" : "Далее";
+    index === questions.length - 1 ? "ОТПРАВИТЬ" : "ДАЛЕЕ >";
 }
 
 // Слушатель события для кнопки "Далее"

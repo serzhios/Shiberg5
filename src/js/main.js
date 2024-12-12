@@ -1,6 +1,6 @@
 import {sliderMain1} from "./module/sliderMain1.js"
 import {sliderMain2} from "./module/sliderMain2.js"
-import {sliderMain3} from "./module/sliderMain3.js"
+// import {sliderMain3} from "./module/sliderMain3.js"
 import { answerMain1 } from "./module/answerMaein1.js";
 import { categoryMain1 } from "./module/categoryMain1.js";
 import{documMain1} from "./module/documMain1.js"
@@ -67,9 +67,9 @@ export function kwis(index) {
 
   // Изменяем текст кнопки: "Далее" или "Получить подбор" для последнего вопроса
   nextBtn.textContent =
-    index === questions.length - 2 ? "Отправить" : "Далее";
+    index === questions.length - 2 ? "ОТПРАВИТЬ" : "ДАЛЕЕ ";
   nextBtn.textContent =
-    index === questions.length - 1 ? "" : "Далее";
+    index === questions.length - 1 ? "" : "ДАЛЕЕ ";
 }
 
 // Слушатель события для кнопки "Далее"
@@ -91,7 +91,7 @@ kwis(currentQuestion);
 answerMain1()
 sliderMain1()
 sliderMain2()
-sliderMain3()
+// sliderMain3()
 categoryMain1()
 documMain1()
 thumbnailMain()

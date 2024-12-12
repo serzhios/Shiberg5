@@ -1988,7 +1988,7 @@
 .main .kwis-main .kwis__right-btn {
   position: absolute;
   bottom: 20%;
-  right: 8%;
+  right: 23%;
   text-align: right;
   margin-top: 143px;
 }
@@ -2007,11 +2007,18 @@
   right: 10%;
 }
 .main .section6-main .section6-conteiner .section6-content .section6__up {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  gap: clamp(20px, 13.1578947368vw, 150px);
 }
 .main .section6-main .section6-conteiner .section6-content .section6__up .section6__left {
-  width: 100%;
+  width: 44.5614035088%;
+}
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__left .section6__swiper {
+  height: 100%;
+  display: none;
+}
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__left .section6__swiper.active {
+  display: block;
 }
 .main .section6-main .section6-conteiner .section6-content .section6__up .section6__left .section6__swiper .section6-wrapper .custom-card-swiper6 {
   position: relative;
@@ -2030,18 +2037,17 @@
   height: 100%;
   object-fit: cover;
 }
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__left .section6__swiper .section6-wrapper .active {
-  display: block;
-}
 .main .section6-main .section6-conteiner .section6-content .section6__up .section6__left .section6__swiper #section6-swiper-button-next,
 .main .section6-main .section6-conteiner .section6-content .section6__up .section6__left .section6__swiper #section6-swiper-button-prev {
   color: var(--color-wite);
   /* Красный цвет кнопок */
 }
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right {
+  flex: 1;
+}
 .main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block {
   display: grid;
   align-items: center;
-  padding-left: 9.8125rem;
   text-align-last: left;
 }
 .main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-h1 {
@@ -2052,22 +2058,36 @@
   color: #000;
 }
 .main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-p {
+  margin-bottom: 50px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16.96px;
   line-height: 95%;
   color: #000;
 }
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-item {
-  padding-bottom: 60px;
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6__btn-group {
+  display: flex;
+  flex-direction: column;
 }
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-item .section6-list {
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6__btn-group .section6__btn {
   display: flex;
   flex-direction: row;
-  text-align: center;
   align-items: center;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 116%;
+  color: #000;
 }
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-item .outer-square {
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6__btn-group .section6__btn.active {
+  display: block;
+}
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6__btn-group .section6__btn.active .section6__marker .inner-square {
+  display: block;
+}
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6__btn-group .section6__btn .section6__marker {
+  display: none;
+  margin-right: 15px;
   width: 20px;
   height: 20px;
   background-color: black;
@@ -2075,7 +2095,8 @@
   justify-content: center;
   align-items: center;
 }
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-item .outer-square .inner-square {
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6__btn-group .section6__btn .section6__marker .inner-square {
+  display: none;
   width: 10px;
   height: 10px;
   background-color: white;
@@ -2083,24 +2104,11 @@
   justify-content: center;
   align-items: center;
 }
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-item .outer-square .inner-square .inner-square::after {
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6__btn-group .section6__btn .section6__marker .inner-square .inner-square::after {
   content: "";
   width: 20px;
   height: 20px;
   background-color: black;
-}
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6-item .section6-list {
-  position: relative;
-  font-family: var(--second-family);
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 116%;
-  color: #000;
-  list-style-type: none;
-  /* Скрываем маркеры по умолчанию */
-  padding: 5px 0;
-  cursor: pointer;
-  gap: 15px;
 }
 .main .section6-main .section6-conteiner .section6-content .section6__down {
   padding-top: 95px;
