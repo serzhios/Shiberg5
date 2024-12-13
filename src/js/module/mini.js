@@ -11,6 +11,5 @@ export function Mini() {
         swipers[index].classList.add("active");
       });
     });
-
   }
 }
