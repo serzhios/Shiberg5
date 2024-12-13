@@ -2079,36 +2079,27 @@
   line-height: 116%;
   color: #000;
 }
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6__btn-group .section6__btn.active {
-  display: block;
-}
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6__btn-group .section6__btn.active .section6__marker .inner-square {
-  display: block;
+.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6__btn-group .section6__btn.active .section6__marker {
+  display: flex;
 }
 .main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6__btn-group .section6__btn .section6__marker {
   display: none;
   margin-right: 15px;
   width: 20px;
   height: 20px;
-  background-color: black;
-  display: flex;
+  min-width: 20px;
+  border: 2px solid var(--color-text-header-h1);
+  background-color: transparent;
   justify-content: center;
   align-items: center;
 }
 .main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6__btn-group .section6__btn .section6__marker .inner-square {
-  display: none;
   width: 10px;
   height: 10px;
-  background-color: white;
+  background-color: var(--color-text-header-h1);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.main .section6-main .section6-conteiner .section6-content .section6__up .section6__right .section6__text-block .section6__btn-group .section6__btn .section6__marker .inner-square .inner-square::after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: black;
 }
 .main .section6-main .section6-conteiner .section6-content .section6__down {
   padding-top: 95px;
