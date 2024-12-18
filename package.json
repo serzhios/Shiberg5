@@ -13,7 +13,9 @@
   "author": "EvgeN",
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.714.0",
     "del": "^6.1.1",
+    "fix-esm": "^1.0.1",
     "gulp": "^5.0.0",
     "gulp-replace": "^1.1.4",
     "gulp-svg-sprite": "^2.0.3",
