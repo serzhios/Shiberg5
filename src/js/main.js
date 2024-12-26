@@ -15,6 +15,9 @@ import {reviewsSlider1} from "./module/reviewsSlider1.js"
 import {stageSlider} from "./module/stageSlider.js"
 import { testWebP } from "./module/testWebP.js";
 import {Mini} from "./module/mini.js"
+import { optionSlide } from "./module/optionSlide.js";
+import { writeSlider } from "./module/writeSleder.js";
+// import {optionMiniSlider} from "./module/optionMiniSlider.js";
 document.querySelectorAll('.section6-list').forEach(function(item) {
     item.addEventListener('click', function() {
         this.classList.toggle('active'); // Добавляем/удаляем класс "active" при клике
@@ -59,38 +62,38 @@ const questions = document.querySelectorAll(".kwis-conteiner"); // Выбира�
 const nextBtn = document.getElementById("kwis-button"); // Кнопка "Далее"
 
 // Функция для отображения текущего вопроса
-export function kwis(index) {
-  if(document.querySelectorAll(".kwis-conteiner")){
-    questions.forEach((q, i) => {
-      // Показываем только текущий вопрос, остальные скрываем
-      q.style.display = i === index ? "block" : "none";
-    });
+// export function kwis(index) {
+//   if(document.querySelectorAll(".kwis-conteiner")){
+//     questions.forEach((q, i) => {
+//       // Показываем только текущий вопрос, остальные скрываем
+//       q.style.display = i === index ? "block" : "none";
+//     });
 
-    // Изменяем текст кнопки: "Далее" или "Получить подбор" для последнего вопроса
-    nextBtn.textContent =
-      index === questions.length - 2 ? "ОТПРАВИТЬ" : "ДАЛЕЕ ";
-    nextBtn.textContent =
-      index === questions.length - 1 ? "" : "ДАЛЕЕ ";
+//     // Изменяем текст кнопки: "Далее" или "Получить подбор" для последнего вопроса
+//     nextBtn.textContent =
+//       index === questions.length - 2 ? "ОТПРАВИТЬ" : "ДАЛЕЕ ";
+//     nextBtn.textContent =
+//       index === questions.length - 1 ? "" : "ДАЛЕЕ ";
 
-  }
+//   }
 
-}
+// }
 
-// Слушатель события для кнопки "Далее"
-nextBtn.addEventListener("click", () => {
-  if (currentQuestion < questions.length - 1) {
-    // Переключаемся на следующий вопрос
-    currentQuestion++;
-    kwis(currentQuestion);
-  } else {
-    // Логика для последнего вопроса (например, отправка данных)
-    console.log("Ваши ответы отправлены!");
-    // Здесь вы можете добавить другую логику, например, отправить данные
-  }
-});
+// // Слушатель события для кнопки "Далее"
+// nextBtn.addEventListener("click", () => {
+//   if (currentQuestion < questions.length - 1) {
+//     // Переключаемся на следующий вопрос
+//     currentQuestion++;
+//     kwis(currentQuestion);
+//   } else {
+//     // Логика для последнего вопроса (например, отправка данных)
+//     console.log("Ваши ответы отправлены!");
+//     // Здесь вы можете добавить другую логику, например, отправить данные
+//   }
+// });
 
 // Изначально отображаем первый вопрос
-kwis(currentQuestion);
+// kwis(currentQuestion);
 
 answerMain1()
 sliderMain1()
@@ -108,3 +111,6 @@ catalogSlider()
 reviewsSlider1()
 stageSlider()
 Mini()
+optionSlide()
+writeSlider()
+// optionMiniSlider()
