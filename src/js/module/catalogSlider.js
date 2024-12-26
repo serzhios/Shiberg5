@@ -8,10 +8,10 @@ export function catalogSlider(){
               nextEl: ".block-button-next",
               prevEl: ".block-button-prev",
             },
-            scrollbar: {
-                el: ".swiper-scrollbar",
-                hide: true,
-              }
+            // scrollbar: {
+            //     el: ".swiper-scrollbar",
+            //     hide: true,
+            //   }
           });
 }
 
