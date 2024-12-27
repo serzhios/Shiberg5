@@ -5556,7 +5556,7 @@
 }
 .main .cart-main .cart-conteiner .cart-content {
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 55% 43%;
   gap: 20px;
 }
 .main .cart-main .cart-conteiner .cart-content .cart-left {
@@ -5605,18 +5605,18 @@
   flex-direction: row;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block2 .star-block .star-rating {
   color: #4CAF50;
 }
 .main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block2 .star-block .star-otziv {
-  margin-right: 5px;
   display: flex;
   align-items: center;
   text-align: center;
 }
 .main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block2 .star-block .star-otziv span {
+  margin-left: 5px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
@@ -5633,12 +5633,12 @@
   color: #797979;
 }
 .main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block2 .star-block .star-gar {
-  margin-right: 5px;
   display: flex;
   align-items: center;
   text-align: center;
 }
 .main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block2 .star-block .star-gar span {
+  margin-left: 5px;
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
@@ -5661,6 +5661,150 @@
   text-decoration-skip-ink: none;
   color: #292929;
   margin: 13px 0 33px 0;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  text-align: left;
+  margin-bottom: 15px;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item {
+  padding: 20px;
+  border: 1px solid rgba(165, 165, 165, 0.3);
+  border-radius: 5px;
+  width: 100%;
+  height: 320px;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-block-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-block-label .label-select label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-block-label .label-select label span {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 175%;
+  color: #434343;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-block-label .label-select select {
+  margin-top: 10px;
+  border: 1px solid rgba(165, 165, 165, 0.3);
+  width: 100%;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-right-item {
+  margin-top: 20px;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-right-item p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 175%;
+  color: #959595;
+  margin: 0;
+  gap: 10px;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-right-item p:nth-child(2) {
+  margin: 5px 0;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-item-text {
+  margin: 15px 0 19px 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: #797979;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-block-item-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-block-item-price .price-item .price {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: #000;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-block-item-price .price-item .total-price {
+  margin-top: 13px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  color: #242424;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-block-item-price .price-item .total-price span {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 131%;
+  color: #06828e;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-block-item-price .price-click {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 44px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  width: 120px;
+  height: 39px;
+  background: #f1f1f1;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-block-item-price .price-click .counter-button1 {
+  margin-bottom: 6px;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-block-item-price .price-click .counter-button2 {
+  margin-top: 3px;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-block3 .cart-right-block3-item .cart-block-item-price .price-click .counter-value {
+  margin: 27px 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 112%;
+  color: #6b7170;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-zak {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: right;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-zak .cart-right-zak-button {
+  border-radius: 15px;
+  padding: 15px 76px;
+  background: #06828e;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 117%;
+  color: #fff;
+}
+.main .cart-main .cart-conteiner .cart-content .cart-right .cart-right-zak p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 117%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #06828e;
 }
 .main .description-section {
   margin-bottom: 91px;
