@@ -1,9 +1,8 @@
-let currentQuestion = 0; // Индекс текущего вопроса
-const questions = document.querySelectorAll(".question"); // Выбираем все вопросы
-const nextBtn = document.getElementById("kwis-button"); // Кнопка "Далее"
 
 // Функция для отображения текущего вопроса
 export function kwis(index) {
+  const questions = document.querySelectorAll(".question"); // Выбираем все вопросы
+  const nextBtn = document.getElementById("kwis-button"); // Кнопка "Далее"
   questions.forEach((q, i) => {
     // Показываем только текущий вопрос, остальные скрываем
     q.style.display = i === index ? "block" : "none";
@@ -12,7 +11,7 @@ export function kwis(index) {
   // Изменяем текст кнопки: "Далее" или "Получить подбор" для последнего вопроса
   nextBtn.textContent =
     index === questions.length - 1 ? "ОТПРАВИТЬ" : "ДАЛЕЕ >";
-}
+
 
 // Слушатель события для кнопки "Далее"
 nextBtn.addEventListener("click", () => {
@@ -28,4 +27,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 // Изначально отображаем первый вопрос
-kwis(currentQuestion);
+
+}
+
+
