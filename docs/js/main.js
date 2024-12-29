@@ -6,7 +6,7 @@ import { categoryMain1 } from "./module/categoryMain1.js";
 import{documMain1} from "./module/documMain1.js"
 import { thumbnailMain } from "./module/thumbnailMain.js";
 import{sliderMain4} from "./module/sliderMain4.js"
-// import { kwis } from "./module/kwis.js";
+import { quiz } from "./module/quiz.js";
 import {dropdownMenu} from "./module/dropdownMenu.js"
 // import { delyveryToggle } from "./module/delyvery.js";
 import { catalogBtn } from "./module/catalogBtn.js";
@@ -57,9 +57,7 @@ testWebP(function (support) {
 
 
 
-let currentQuestion = 0; // Индекс текущего вопроса
-const questions = document.querySelectorAll(".kwis-conteiner"); // Выбираем все вопросы
-const nextBtn = document.getElementById("kwis-button"); // Кнопка "Далее"
+
 
 // Функция для отображения текущего вопроса
 // export function kwis(index) {
@@ -103,7 +101,10 @@ categoryMain1()
 documMain1()
 thumbnailMain()
 sliderMain4()
-// kwis()
+
+if(document.querySelector('#quiz-1')){
+  quiz()
+}
 dropdownMenu()
 // delyveryToggle()
 catalogBtn()
