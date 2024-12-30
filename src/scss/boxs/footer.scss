@@ -1,5 +1,3 @@
-
-
 .footer {
 
 
@@ -25,7 +23,8 @@
           flex-direction: row;
           align-items: center;
         }
-        picture{
+
+        picture {
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -39,7 +38,7 @@
           font-weight: 400;
           font-size: 1rem;
           line-height: 162%;
-          color: var(--color-wite);
+          color: var(--label-light-primary)
         }
 
         .footer__left-form {
@@ -51,18 +50,17 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          // align-content: space-between;
-          // flex-wrap: wrap-reverse;
+
 
           align-items: center;
-          // gap: 1.875rem;
+
 
           .footer__title-form {
             font-family: var(--second-family);
             font-weight: 700;
             font-size: 1.625rem;
             line-height: 142%;
-            color: var(--color-wite);
+            color: var(--label-light-primary);
           }
 
           .form-name,
@@ -79,12 +77,17 @@
           input {
             background: transparent;
             border: none;
-            border-bottom: .0625rem solid var(--color-wite);
+            border-bottom: .0625rem solid rgba(255, 255, 255, 0.4);;
             background-color: transparent;
             color: inherit;
             outline: none;
 
             width: 20.625rem;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 153%;
+            color: rgba(255, 255, 255, 0.4);
           }
 
           .submit-button {
@@ -96,9 +99,9 @@
             border: none;
             font-family: var(--font-family);
             font-weight: 400;
-            font-size: .875rem;
+            font-size: 14px;
             line-height: 150%;
-            color: #fff;
+            color: var(--label-light-primary);
           }
         }
 
@@ -121,10 +124,11 @@
         .footer__title-list {
           font-family: var(--font-family);
           font-weight: 600;
-          font-size: 1.125rem;
+          font-size: 18px;
           line-height: 144%;
-          color: var(--color-wite);
+          color: var(--label-light-primary);
           text-transform: none;
+          margin-bottom: 15px;
         }
 
         .footer__nav-link {
@@ -178,13 +182,7 @@
 
 
 
-    // &__nav {
-    //   margin-bottom: 1.5625rem;
-    //   display: flex;
-    //   justify-content: space-between;
-    //   gap: 2.5rem;
-    //   flex-wrap: wrap;
-    // }
+
 
     &__title-list {
       margin-bottom: 1.125rem;
