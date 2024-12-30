@@ -21,6 +21,11 @@
     bottom: 0;
     left: 0;
     background-color: #fff;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 126%;
+    color: var(--label-dark-black);
   }
 
 }

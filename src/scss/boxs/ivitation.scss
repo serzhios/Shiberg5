@@ -17,7 +17,7 @@
             font-weight: 700;
             font-size: 32px;
             line-height: 116%;
-            color: #fff;
+            color: var(--label-light-primary);
           }
 
           .invitation-adress {
@@ -25,7 +25,7 @@
             font-weight: 400;
             font-size: 17px;
             line-height: 153%;
-            color: #fff;
+            color: var(--label-light-primary);
             padding: 30px 0 0 0;
 
             .invitation-link {
@@ -33,7 +33,7 @@
               font-weight: 700;
               font-size: 17px;
               line-height: 153%;
-              color: #fff;
+              color: var(--label-light-primary)
             }
           }
 
@@ -46,7 +46,7 @@
             font-weight: 400;
             font-size: 17px;
             line-height: 153%;
-            color: #fff;
+            color: var(--label-light-primary); 
 
             .invitation-link {
               font-family: var(--font-family);

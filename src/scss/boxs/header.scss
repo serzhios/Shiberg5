@@ -183,7 +183,7 @@
         font-size: 14px;
         line-height: 157%;
         text-transform: uppercase;
-        color: #000;
+        color: var(--label-dark-black);
       }
     }
   }
@@ -222,7 +222,7 @@
       font-weight: 400;
       font-size: .875rem;
       line-height: 157%;
-      color: var(--color-wite);
+      color: var(--label-light-primary);
       border: none;
     }
   }

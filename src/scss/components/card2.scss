@@ -9,8 +9,9 @@
 
     .card-block {
         padding: 16px 0 43px 16px;
-display: grid;
-grid-template-rows: 1fr 1fr;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+
         .card2__card-img {
             border-radius: 100px;
             width: 56px;
@@ -27,9 +28,9 @@ grid-template-rows: 1fr 1fr;
             padding-top: 26px;
             font-family: var(--font-family);
             font-weight: 400;
-            font-size: 1.06rem;
+            font-size: 17px;
             line-height: 124%;
-            color: var(--color-wite);
+            color: var(--label-light-primary);
             text-align: left;
         }
     }
