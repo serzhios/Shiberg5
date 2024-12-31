@@ -133,7 +133,7 @@
                             flex-direction: row;
                             align-items: center;
 
-                            span {
+                            tac span {
                                 margin-left: 15px;
                                 font-family: var(--second-family);
                                 font-weight: 500;
@@ -217,12 +217,23 @@
                         }
 
                         p:nth-child(2) {
-                            margin-bottom: 30px;
+                            margin-top: 30px;
+                            margin-bottom: 55px;
                         }
 
                         .smart-down-right-link {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            text-align: center;
+
                             span {
                                 margin-left: 15px;
+                                font-family: var(--second-family);
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 120%;
+                                color: var(--label-light-primary);
                             }
                         }
                     }
@@ -231,4 +242,99 @@
         }
     }
 
+    .news-filter-main {
+        .news-filter-conteiner {
+            .news-filter-content {
+                .news-filter__filter {
+                    &-box {
+                        display: flex;
+                        flex-direction: row;
+                        text-align: center;
+                        align-items: center;
+
+                        .box__label {
+                            select {
+                                cursor: pointer;
+                                border: 1px solid #06828e;
+                                border-radius: 10px;
+                                width: 262px;
+                                height: 53px;
+                                padding: 8px 16px;
+                                background: #06828e;
+                                font-family: var(--second-family);
+                                font-weight: 700;
+                                font-size: 17px;
+                                line-height: 218%;
+                                color: var(--label-light-primary);
+
+                                option {}
+                            }
+
+                        }
+
+                        .box__button {
+                            margin-left: 60px;
+
+                            display: flex;
+                            gap: 20px;
+
+                            .box-button {
+                                display: flex;
+                                align-items: center;
+                                border: 1px solid rgba(6, 130, 142, 0.6);
+                                border-radius: 2px;
+                                background: #fff;
+                                padding: 6px 16px;
+                                // width: 93px;
+                                // height: 33px;
+                                font-family: var(--font-family);
+                                font-weight: 400;
+                                font-size: 16px;
+                                color: rgba(31, 30, 30, 0.6);
+
+                                .cross {
+                                    display: none;
+                                    position: relative;
+                                    width: 9px;
+                                    /* Размер крестика */
+                                    height: 9px;
+                                    margin-right: 10px;
+                                }
+
+                                .cross::before,
+                                .cross::after {
+                                    content: '';
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    width: 100%;
+                                    height: 2px;
+                                    /* Толщина линий */
+                                    background-color: var(--label-light-primary);
+                                    /* Цвет линий */
+                                    transform-origin: center;
+                                    transform: translate(-50%, -50%) rotate(45deg);
+                                }
+                                .cross::after {
+                                    transform: translate(-50%, -50%) rotate(-45deg);
+                                  }
+                            }
+
+                            .selected {
+                                background: #06828e;
+                                color: #fff;
+                                .cross{
+                                    display:block;
+                                }
+                            }
+                        }
+
+                    }
+                }
+                .news-filter__filter-cart{
+                    margin-top: 35px;
+                }
+            }
+        }
+    }
 }

@@ -113,6 +113,38 @@
       </div>
 
     </section>
+    <section class="section news-filter-main">
+      <div class="container news-filter-conteiner">
+        <div class="content news-filter-content">
+          <div class="news-filter__filter">
+            <div class="news-filter__filter-box">
+              <div class="box__label">
+
+
+                  <!-- <span>Сначала новое</span></label> -->
+                  <select id="length">
+                    <option>Сначала новое</option>
+                    <option>Сначала новое</option>
+                    <option>Сначала новое</option>
+                  </select>
+              </div>
+              <div class="box__button">
+                <button class="box-button selected"> <div class="cross"></div>Модели</button>
+                <button class="box-button">Советы</button>
+                <button class="box-button">Рейтинги</button>
+                <button class="box-button">Мероприятия</button>
+              </div>
+
+            </div>
+            <div class="news-filter__filter-cart">
+              @@include('html/components/news-cart.html',{"imgUrl":"img/news/model.png", "date":"26.10.2024", "title":"Модель SCHIBERG Квадро", "description":"Хотите современную вентиляцию в ванную?
+              Вентиляционная решетка SCHIBERG КВАДРО обеспечит вентиляцию и циркуляцию воздуха, особенно идеально модель подойдет для ванной комнаты, кухни или гардеробной комнаты...", "link": "contacts-page.html", "linkText":"Читать далее"})
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     @@include('html/boxs/ivitation.html')
 
   </main>
