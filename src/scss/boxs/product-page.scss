@@ -1282,3 +1282,11 @@
   }
 
 }
+
+.cart-main {
+  &__box-drop-down {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
