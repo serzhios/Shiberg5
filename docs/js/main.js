@@ -7,6 +7,10 @@ import{documMain1} from "./module/documMain1.js"
 import { thumbnailMain } from "./module/thumbnailMain.js";
 import{sliderMain4} from "./module/sliderMain4.js"
 import { quiz } from "./module/quiz.js";
+
+import { dropDown1 } from "./module/dropDown1.js";
+
+
 import {dropdownMenu} from "./module/dropdownMenu.js"
 // import { delyveryToggle } from "./module/delyvery.js";
 import { catalogBtn } from "./module/catalogBtn.js";
@@ -105,6 +109,11 @@ sliderMain4()
 if(document.querySelector('#quiz-1')){
   quiz()
 }
+
+if(document.querySelectorAll('.drop-down-1')) {
+  dropDown1()
+}
+
 dropdownMenu()
 // delyveryToggle()
 catalogBtn()

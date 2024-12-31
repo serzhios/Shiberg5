@@ -252,6 +252,14 @@
     flex-direction: column;
     gap: 30px;
 
+    &.big {
+      gap: 25px;
+
+      label {
+        justify-content: space-between;
+      }
+    }
+
     label {
       cursor: pointer;
       display: flex;
