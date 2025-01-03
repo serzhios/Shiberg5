@@ -1,0 +1,40 @@
+.news-cart {
+    text-align: left;
+    width: 330px;
+    .news-cart__img {}
+
+    .news-cart__date {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 17px;
+        color: var(--label-dark-black);
+        margin: 20px 0 10px 0;
+    }
+
+    .news-cart__title {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 135%;
+        color: var(--label-dark-black);
+    }
+
+    .news-cart__text {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 131%;
+        color: var(--label-dark-black);
+        margin: 15px 0 25px 0;
+    }
+
+    .news-cart__link {
+        display: flex;
+flex-direction: row;
+align-items: center;
+text-align: center;
+}
+span{
+    margin-left: 15px;
+}
+}

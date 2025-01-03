@@ -245,6 +245,8 @@
     .news-filter-main {
         .news-filter-conteiner {
             .news-filter-content {
+                margin-left: 40px;
+
                 .news-filter__filter {
                     &-box {
                         display: flex;
@@ -315,25 +317,268 @@
                                     transform-origin: center;
                                     transform: translate(-50%, -50%) rotate(45deg);
                                 }
+
                                 .cross::after {
                                     transform: translate(-50%, -50%) rotate(-45deg);
-                                  }
+                                }
                             }
 
                             .selected {
                                 background: #06828e;
                                 color: #fff;
-                                .cross{
-                                    display:block;
+
+                                .cross {
+                                    display: block;
                                 }
                             }
                         }
 
                     }
                 }
-                .news-filter__filter-cart{
+
+                .news-filter__filter-cart {
                     margin-top: 35px;
+                    display: grid;
+                    grid-template-rows: repeat(4, 1fr);
+                    grid-template-columns: repeat(3, 1fr);
+                    column-gap: 45px;
+                    row-gap: 60px;
+
+                    .news-filter__subscribe-block {
+                        grid-column: 2 / span 2;
+                        background: #fff;
+                        border: 1px solid #d9d9d9;
+                        border-radius: 8px;
+                        padding: 30px;
+                        // width: 400px;
+                        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+                        h2 {
+                            font-family: var(--second-family);
+                            font-weight: 700;
+                            font-size: 32px;
+                            line-height: 149%;
+                            color: var(--label-dark-black);
+                        }
+
+                        p {
+                            font-family: var(--font-family);
+                            font-weight: 400;
+                            font-size: 17px;
+                            line-height: 124%;
+                            color: var(--label-dark-black);
+                            margin: 15px 0 90px 0;
+                        }
+
+                        .news-filter__form {
+
+                            input[type="text"],
+                            input[type="email"],
+                            input[type="tel"] {
+                                width: 100%;
+                                padding: 14px;
+                                font-size: 14px;
+                                margin-bottom: 15px;
+                                border: 1px solid #d9d9d9;
+                                border-radius: 6px;
+                            }
+
+                            .news-filter__submit-section {
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-top: 50px;
+
+                                button {
+                                    background-color: #008080;
+
+                                    padding: 16px 71px;
+                                    border: none;
+                                    border-radius: 10px;
+                                    cursor: pointer;
+                                    transition: background-color 0.3s;
+                                    font-family: var(--second-family);
+                                    font-weight: 700;
+                                    font-size: 17px;
+                                    line-height: 218%;
+                                    text-align: center;
+                                    color: var(--label-light-primary);
+                                }
+
+                                button:hover {
+                                    background-color: #006666;
+                                }
+
+                                .news-filter__checkbox-wrapper {
+                                    display: flex;
+                                    align-items: center;
+
+                                    &-link {
+                                        display: flex;
+                                        flex-direction: column;
+                                        margin-left: 8px;
+                                        text-align: left;
+                                        margin-right: 17px;
+
+                                        span {
+                                            font-family: var(--font-family);
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 130%;
+                                            color: var(--label-dark-black);
+                                        }
+
+                                        a {
+                                            font-family: var(--font-family);
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            line-height: 130%;
+                                            color: var(--label-dark-black);
+                                            text-decoration: underline;
+                                            text-decoration-skip-ink: none;
+                                        }
+                                    }
+
+
+
+                                }
+                            }
+                        }
+
+
+                    }
                 }
+            }
+        }
+    }
+
+    .acadeny-video-main {
+        .academy-video__conteiner {
+            .academy-video__content {
+                .academy-video__block {
+                    background-color: #f7f7f7;
+                    border-radius: 8px;
+                    padding: 20px;
+                    // max-width: 900px;
+                    // margin: 0 auto;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    padding: 100px 92px 100px 65px;
+
+
+                    &-header {
+                        font-family: var(--second-family);
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 116%;
+                        color: var(--label-dark-black);
+                        text-align: left;
+                        margin-bottom: 30px;
+                    }
+
+                    &-content {
+                        display: flex;
+                        flex-wrap: wrap;
+
+
+                        .academy-video__wrapper {
+
+                            position: relative;
+                            flex: 1 1 511px;
+                            // max-height: 300px;
+                            // min-width: 300px;
+                            // max-width: 511px;
+
+                            .video-thumbnail {
+                                // height: 300px;
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+                                border-radius: 8px;
+                            }
+
+                            .play-button {
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                // color: white;
+                                // font-size: 40px;
+                                // background-color: rgba(0, 0, 0, 0.5);
+                                // border-radius: 50%;
+                                // width: 60px;
+                                // height: 60px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                cursor: pointer;
+                                z-index: 1;
+                                background: none;
+                            }
+                        }
+
+                        .academy-video__text-content {
+
+                            flex: 1 1 300px;
+                            display: flex;
+                            flex-direction: column;
+                            // gap: 10px;
+                            margin-left: 52px;
+
+                            text-align: left;
+
+
+                            .text-block {
+                                display: flex;
+                                flex-direction: row;
+
+                                text-align: center;
+                                svg{
+                                    margin-top: 5px;
+                                }
+                                span {
+                                    margin-left: 12px;
+                                    font-family: var(--font-family);
+                                    font-weight: 600;
+                                    font-size: 25px;
+
+                                    color: var(--label-dark-black);
+
+                                text-align: start;
+
+                                    // text-align: left;
+                                }
+
+                            }
+
+
+
+
+                            p {
+
+                                font-family: var(--font-family);
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 131%;
+                                color: var(--label-dark-black);
+                                margin: 10px 0 50px 0;
+                            }
+
+                            .academy-video__text-cta-button {
+                                font-family: var(--second-family);
+                                font-weight: 700;
+                                font-size: 17px;
+                                line-height: 218%;
+                                text-align: center;
+                                color: var(--label-light-primary);
+                                border-radius: 10px;
+                                background: #06828e;
+                                padding: 17px 30px;
+                            }
+
+                        }
+                    }
+                }
+
             }
         }
     }
