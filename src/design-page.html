@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/components/head.html',{"title":"Дизайнерам"})
+@@include('html/boxs/header.html')
+
+<body>
+  <main>
+    <section class="reviews-main  ">
+
+
+      <div class="container reviews-conteiner">
+
+        <div class="content reviews-content">
+
+          @@include('html/components/breadcrumbs.html',{"Link":"Дизайнерам"})
+
+
+
+
+
+        </div>
+      </div>
+    </section>
+    <section class=" design-why-section">
+      <div class="container design-why-conteiner">
+        <div class="content design-why-content">
+          <div class="design-why-title">
+            <h2>
+              Дизайнерам. Почему с нами удобно работать?
+
+            </h2>
+          </div>
+          <div class="design-why-block">
+
+            @@include('html/components/design-cart.html',{"title":"01", "subtitle":"Мы поможем найти решение для вашего
+            клиента", "text":"Изготавливаем вентиляционные решетки индивидуальных размеров под любое покрытие на
+            собственном производстве"})
+            @@include('html/components/design-cart.html',{"title":"02", "subtitle":"Мы берем все технические сложности
+            на себя!", "text":"Подбираем решетки, учитывая все характеристики вашего проекта"})
+            @@include('html/components/design-cart.html',{"title":"03", "subtitle":"Мы осуществляем PR поддержку
+            дизайнеров по завершению проекта", "text":"(публикуем в соц.сетях и на сайте, приглашаем на вебинары и
+            другие мероприятия)"})
+          </div>
+
+
+
+        </div>
+      </div>
+
+    </section>
+    <section class="design-slide-section">
+      <div class="container design-slide-conteiner">
+        <div class="content design-slide-content">
+          <div class="design-slide-up">
+            <p class="design-up-title">Дизайнеры, с которыми мы работаем</p>
+            <button class="design-up-button">Присоединяйся</button>
+          </div>
+          <div class="design-slide-down">
+            <div class=" swiper-container design-swiper-container">
+              <div class="swiper-wrapper design-slider-wrapper">
+                <div class="swiper-slide design-slider-slide">
+                  @@include('html/components/design-cart-people.html',{"img":"img/design/burova.png", "info": "Бурова
+                  Елизавета", "Link": "design-page.html"})
+
+                </div>
+                <div class="swiper-slide design-slider-slide">
+                  @@include('html/components/design-cart-people.html',{"img":"img/design/ivanova.png", "info": "Иванова Софья", "Link": "design-page.html"})
+
+                </div>
+                <div class="swiper-slide design-slider-slide">
+                  @@include('html/components/design-cart-people.html',{"img":"img/design/ivanov.png", "info": "Иванов Макар", "Link": "design-page.html"})
+
+                </div>
+                <div class="swiper-slide design-slider-slide">
+                  @@include('html/components/design-cart-people.html',{"img":"img/design/necrasova.png", "info": "Некрасова Аделина", "Link": "design-page.html"})
+
+                </div>
+                <div class="swiper-slide design-slider-slide">
+                  @@include('html/components/design-cart-people.html',{"img":"img/design/burova.png", "info": "Бурова
+                  Елизавета", "Link": "design-page.html"})
+
+                </div>
+                <div class="swiper-slide design-slider-slide">
+                  @@include('html/components/design-cart-people.html',{"img":"img/design/burova.png", "info": "Бурова
+                  Елизавета", "Link": "design-page.html"})
+
+                </div>
+              </div>
+              <div class="design-up-swiper-button">
+                <button class="design-swiper-button-next">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" transform="matrix(-1 0 0 1 40 0)" fill="white" />
+                    <path d="M21.6667 13.3333L15 19.9999L21.6667 26.6666" stroke="#06828E" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+
+                </button>
+                <button class="design-swiper-button-prev">
+                  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="20" fill="white" />
+                    <path d="M18.3333 13.3333L25 19.9999L18.3333 26.6666" stroke="#06828E" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+
+                </button>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class=" section design-produce-section">
+<div class="container design-produce-conteiner">
+  <div class="content design-produce-content">
+    <p class="produce-up">Произведем под ваш проект по индивидуальным замерам</p>
+    <div class="produce-form">
+      <input class="produce-form-name" type="text" placeholder="Имя" />
+      <input class="produce-form-phone" type="text" placeholder="Номер телефона" />
+      <input class="produce-form-email" type="email" placeholder="Email" />
+    
+      <textarea class="produce-form-text" placeholder="Комментарий"></textarea>
+    </div>
+  </div>
+</div>
+
+    </section>
+    @@include('html/components/quiz.html')
+    @@include('html/boxs/ivitation.html')
+
+  </main>
+  @@include('html/boxs/footer.html')
+
+</body>
+
+</html>

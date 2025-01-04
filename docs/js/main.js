@@ -21,6 +21,7 @@ import { testWebP } from "./module/testWebP.js";
 import {Mini} from "./module/mini.js"
 import { optionSlide } from "./module/optionSlide.js";
 import { writeSlider } from "./module/writeSleder.js";
+import { designSlider } from "./module/designSlider.js";
 // import {optionMiniSlider} from "./module/optionMiniSlider.js";
 document.querySelectorAll('.section6-list').forEach(function(item) {
     item.addEventListener('click', function() {
@@ -124,3 +125,4 @@ Mini()
 optionSlide()
 writeSlider()
 // optionMiniSlider()
+designSlider()
