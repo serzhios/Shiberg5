@@ -16,6 +16,8 @@
 @use "boxs/question-page";
 @use "boxs/product-page";
 @use "boxs/news-page";
+@use "boxs/new-next-page";
+@use "boxs/design-page";
 
 
 
@@ -51,6 +53,8 @@
 @use "components/quiz.scss";
 @use "components/drop-down-1.scss";
 @use "components/news-cart.scss";
+@use "components/design-cart.scss";
+@use "components/design-cart-people.scss";
 
 // @use "components/box-network.scss";
 // @use "components/box-network.scss";

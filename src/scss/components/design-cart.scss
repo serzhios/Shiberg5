@@ -1,0 +1,33 @@
+.design-cart {
+    border-radius: 15px;
+    box-shadow: 2px 2px 17px 0 rgba(0, 0, 0, 0.12);
+    background: var(--label-light-primary);
+    padding: 12px 19px 20px 25px;
+
+    .design__cart {
+        &-title {
+            font-family: var(--font-family);
+            font-weight: 300;
+            font-size: 62px;
+            line-height: 95%;
+            color: #06828e;
+        }
+
+        &-subtitle {
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 126%;
+            color: var(--label-dark-black);
+            margin: 10px 0 15px 0;
+        }
+
+        &-text {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 131%;
+            color: var(--label-dark-black);
+        }
+    }
+}
