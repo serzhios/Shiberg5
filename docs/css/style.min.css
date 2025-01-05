@@ -788,533 +788,6 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.5625rem;
 }
-.main .section4-main .section4-conteiner .section4-content {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left {
-  position: relative;
-  text-align: left;
-  width: 43.3125rem;
-  height: 27.0625rem;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left h3 {
-  font-family: var(--second-family);
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 116%;
-  color: var(--label-dark-black);
-  padding-bottom: 27px;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left p {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 124%;
-  color: var(--label-dark-black);
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-flanec {
-  position: absolute;
-  bottom: 17px;
-  left: 41px;
-  transform: translateX(-50%);
-  width: 30px;
-  /* Размер внешнего круга */
-  height: 30px;
-  /* Размер внешнего круга */
-  background-color: transparent;
-  /* Толщина и цвет границы */
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec .block {
-  position: absolute;
-  bottom: 105px;
-  left: -15px;
-  width: 201px;
-  height: 50px;
-  border: 1px solid #000;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec .block .line {
-  content: "";
-  /* Пустое содержание, чтобы псевдоэлемент отобразился */
-  position: absolute;
-  left: 30px;
-  /* Центрируем линию относительно блока */
-  top: 100%;
-  /* Начинаем от нижней границы блока */
-  transform: translateX(-50%);
-  /* Корректируем смещение */
-  width: 1px;
-  /* Толщина линии */
-  height: 82px;
-  /* Длина линии */
-  background-color: #000;
-  /* Цвет линии */
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec .block .circle {
-  position: absolute;
-  top: 130px;
-  left: 30px;
-  transform: translateX(-50%);
-  width: 10px;
-  /* Размер внешнего круга */
-  height: 10px;
-  /* Размер внешнего круга */
-  background-color: transparent;
-  border: 2px solid black;
-  /* Толщина и цвет границы */
-  border-radius: 50%;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec .block .circle::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 3px;
-  /* Размер внутреннего круга */
-  height: 3px;
-  /* Размер внутреннего круга */
-  background-color: black;
-  border-radius: 50%;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec .block .block-text {
-  font-family: var(--font-family);
-  font-weight: 300;
-  font-size: 4px;
-  color: #1d1d1b;
-  padding: 8px 0 0 10px;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec .block .block-img {
-  position: absolute;
-  bottom: 44px;
-  left: 120px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-flanec:hover .left-flanec {
-  visibility: visible;
-  opacity: 1;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-kollector {
-  position: absolute;
-  top: 1;
-  left: 41px;
-  transform: translate(200px, -160px);
-  width: 30px;
-  /* Размер внешнего круга */
-  height: 30px;
-  /* Размер внешнего круга */
-  background-color: transparent;
-  /* Толщина и цвет границы */
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector .block {
-  position: absolute;
-  top: 95px;
-  right: 5px;
-  width: 245px;
-  height: 50px;
-  border: 1px solid #000;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector .block .line {
-  content: "";
-  /* Пустое содержание, чтобы псевдоэлемент отобразился */
-  position: absolute;
-  left: 35px;
-  /* Центрируем линию относительно блока */
-  top: 100%;
-  /* Начинаем от нижней границы блока */
-  transform: translate(200px, -130px);
-  /* Корректируем смещение */
-  width: 1px;
-  /* Толщина линии */
-  height: 82px;
-  /* Длина линии */
-  background-color: #000;
-  /* Цвет линии */
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector .block .circle {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  transform: translate(200px, -120px);
-  width: 10px;
-  /* Размер внешнего круга */
-  height: 10px;
-  /* Размер внешнего круга */
-  background-color: transparent;
-  border: 2px solid black;
-  /* Толщина и цвет границы */
-  border-radius: 50%;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector .block .circle::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 3px;
-  /* Размер внутреннего круга */
-  height: 3px;
-  /* Размер внутреннего круга */
-  background-color: black;
-  border-radius: 50%;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector .block .block-text {
-  font-family: var(--font-family);
-  font-weight: 300;
-  font-size: 4px;
-  color: #1d1d1b;
-  padding: 8px 0 0 10px;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector .block .block-img {
-  position: absolute;
-  bottom: 44px;
-  left: 90px;
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-kollector:hover .left-kollector {
-  visibility: visible;
-  opacity: 1;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-adapter {
-  position: absolute;
-  top: 1;
-  left: 150px;
-  transform: translate(200px, -55px);
-  width: 50px;
-  /* Размер внешнего круга */
-  height: 50px;
-  /* Размер внешнего круга */
-  background-color: transparent;
-  /* Толщина и цвет границы */
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter .block {
-  position: absolute;
-  top: 5px;
-  left: 90px;
-  width: 245px;
-  height: 50px;
-  border: 1px solid #000;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter .block .line {
-  content: "";
-  /* Пустое содержание, чтобы псевдоэлемент отобразился */
-  position: absolute;
-  left: -25px;
-  /* Центрируем линию относительно блока */
-  bottom: 12px;
-  /* Начинаем от нижней границы блока */
-  transform: rotate(90deg);
-  /* Корректируем смещение */
-  width: 1px;
-  /* Толщина линии */
-  height: 48px;
-  /* Длина линии */
-  background-color: #000;
-  /* Цвет линии */
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter .block .circle {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  transform: translate(-85px, -24px);
-  width: 10px;
-  /* Размер внешнего круга */
-  height: 10px;
-  /* Размер внешнего круга */
-  background-color: transparent;
-  border: 2px solid black;
-  /* Толщина и цвет границы */
-  border-radius: 50%;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter .block .circle::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 3px;
-  /* Размер внутреннего круга */
-  height: 3px;
-  /* Размер внутреннего круга */
-  background-color: black;
-  border-radius: 50%;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter .block .block-text {
-  font-family: var(--font-family);
-  font-weight: 300;
-  font-size: 4px;
-  color: #1d1d1b;
-  padding: 8px 0 0 10px;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter .block .block-img {
-  position: absolute;
-  bottom: 44px;
-  left: 90px;
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-adapter:hover .left-adapter {
-  visibility: visible;
-  opacity: 1;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-zenit {
-  position: absolute;
-  top: 80%;
-  left: 180px;
-  transform: translate(200px, -55px);
-  width: 50px;
-  /* Размер внешнего круга */
-  height: 50px;
-  /* Размер внешнего круга */
-  background-color: transparent;
-  /* Толщина и цвет границы */
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit .block {
-  position: absolute;
-  top: 5px;
-  left: 90px;
-  width: 150px;
-  height: 50px;
-  border: 1px solid #000;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit .block .line {
-  content: "";
-  /* Пустое содержание, чтобы псевдоэлемент отобразился */
-  position: absolute;
-  left: -25px;
-  /* Центрируем линию относительно блока */
-  bottom: 12px;
-  /* Начинаем от нижней границы блока */
-  transform: rotate(90deg);
-  /* Корректируем смещение */
-  width: 1px;
-  /* Толщина линии */
-  height: 48px;
-  /* Длина линии */
-  background-color: #000;
-  /* Цвет линии */
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit .block .circle {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  transform: translate(-85px, -24px);
-  width: 10px;
-  /* Размер внешнего круга */
-  height: 10px;
-  /* Размер внешнего круга */
-  background-color: transparent;
-  border: 2px solid black;
-  /* Толщина и цвет границы */
-  border-radius: 50%;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit .block .circle::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 3px;
-  /* Размер внутреннего круга */
-  height: 3px;
-  /* Размер внутреннего круга */
-  background-color: black;
-  border-radius: 50%;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit .block .block-text {
-  font-family: var(--font-family);
-  font-weight: 300;
-  font-size: 4px;
-  color: #1d1d1b;
-  padding: 8px 0 0 10px;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit .block .block-img {
-  position: absolute;
-  bottom: 44px;
-  left: 90px;
-  width: 90%;
-  height: 90%;
-  object-fit: cover;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-zenit:hover .left-zenit {
-  visibility: visible;
-  opacity: 1;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-vozduh {
-  position: absolute;
-  top: 140px;
-  right: 155px;
-  transform: translateX(-50%);
-  width: 30px;
-  /* Размер внешнего круга */
-  height: 30px;
-  /* Размер внешнего круга */
-  background-color: transparent;
-  /* Толщина и цвет границы */
-  border-radius: 50%;
-  display: inline-block;
-  cursor: pointer;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh .block {
-  position: absolute;
-  bottom: 55px;
-  left: -15px;
-  width: 180px;
-  height: 50px;
-  border: 1px solid #000;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh .block .line {
-  content: "";
-  /* Пустое содержание, чтобы псевдоэлемент отобразился */
-  position: absolute;
-  left: 30px;
-  /* Центрируем линию относительно блока */
-  top: 100%;
-  /* Начинаем от нижней границы блока */
-  transform: translateX(-50%);
-  /* Корректируем смещение */
-  width: 1px;
-  /* Толщина линии */
-  height: 38px;
-  /* Длина линии */
-  background-color: #000;
-  /* Цвет линии */
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh .block .circle {
-  position: absolute;
-  top: 85px;
-  left: 30px;
-  transform: translateX(-50%);
-  width: 10px;
-  /* Размер внешнего круга */
-  height: 10px;
-  /* Размер внешнего круга */
-  background-color: transparent;
-  border: 2px solid black;
-  /* Толщина и цвет границы */
-  border-radius: 50%;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh .block .circle::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 3px;
-  /* Размер внутреннего круга */
-  height: 3px;
-  /* Размер внутреннего круга */
-  background-color: black;
-  border-radius: 50%;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh .block .block-text {
-  font-family: var(--font-family);
-  font-weight: 300;
-  font-size: 4px;
-  color: #1d1d1b;
-  padding: 8px 0 0 10px;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh .block .block-img {
-  position: absolute;
-  bottom: 25px;
-  left: 120px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh {
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__left .block-vozduh:hover .left-vozduh {
-  visibility: visible;
-  opacity: 1;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__right .right-content {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 11px;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1 {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  border: 1px solid #000;
-  padding: 20px;
-  text-align: left;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1-up {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-between;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1-up .block1-up-p {
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 126%;
-  color: var(--label-dark-black);
-}
-.main .section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1-up .blocks {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #000;
-  background: #06828e;
-  text-align: right;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1 .block1-down p {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 124%;
-  color: var(--label-dark-black);
-}
-.main .section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1:hover {
-  background: #000;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1:hover .blocks {
-  background: #fff;
-}
-.main .section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1:hover p {
-  color: #fff;
-}
 .main .kwis-main {
   position: relative;
   width: 100%;
@@ -6507,9 +5980,6 @@
 .main .articles-section {
   margin-bottom: 100px;
 }
-.main .articles-section .articles-conteiner {
-  padding: 0 0 0 40px;
-}
 .main .articles-section .articles-conteiner .articles-content {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -6627,9 +6097,6 @@
 .main .smart-section {
   background: #15222a;
 }
-.main .smart-section .smart-conteiner {
-  padding: 0 0 0 40px;
-}
 .main .smart-section .smart-conteiner .smart-content .smart-up {
   display: flex;
   flex-direction: row;
@@ -6690,9 +6157,6 @@
   font-size: 17px;
   line-height: 120%;
   color: var(--label-light-primary);
-}
-.main .news-filter-main .news-filter-conteiner .news-filter-content {
-  margin-left: 40px;
 }
 .main .news-filter-main .news-filter-conteiner .news-filter-content .news-filter__filter-box {
   display: flex;
@@ -6854,6 +6318,9 @@
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
+.main .acadeny-video-main {
+  margin-bottom: 100px;
+}
 .main .acadeny-video-main .academy-video__conteiner .academy-video__content .academy-video__block {
   background-color: #f7f7f7;
   border-radius: 8px;
@@ -6925,7 +6392,7 @@
   font-size: 16px;
   line-height: 131%;
   color: var(--label-dark-black);
-  margin: 10px 0 50px 0;
+  margin: 10px 0 50px 30px;
 }
 .main .acadeny-video-main .academy-video__conteiner .academy-video__content .academy-video__block-content .academy-video__text-content .academy-video__text-cta-button {
   font-family: var(--second-family);
@@ -7245,11 +6712,7 @@
 }
 
 .design-academy-section .design-academy-conteiner .design-academy-content .design-academy__block {
-  background-color: #f7f7f7;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 100px 92px 100px 65px;
+  padding: 0 62px 100px 35px;
 }
 .design-academy-section .design-academy-conteiner .design-academy-content .design-academy__block-header {
   font-family: var(--second-family);
@@ -7309,13 +6772,28 @@
   color: var(--label-dark-black);
   text-align: start;
 }
-.design-academy-section .design-academy-conteiner .design-academy-content .design-academy__block-content .design-academy__text-content p {
+.design-academy-section .design-academy-conteiner .design-academy-content .design-academy__block-content .design-academy__text-content .design-academy-text-title {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 131%;
   color: var(--label-dark-black);
-  margin: 10px 0 50px 0;
+  margin: 10px 0 0 30px;
+}
+.design-academy-section .design-academy-conteiner .design-academy-content .design-academy__block-content .design-academy__text-content .design-academy-text-title span {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 185%;
+  color: #06828e;
+}
+.design-academy-section .design-academy-conteiner .design-academy-content .design-academy__block-content .design-academy__text-content .design-academy-text-title1 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  color: var(--label-dark-black);
+  margin: 10px 0 50px 30px;
 }
 .design-academy-section .design-academy-conteiner .design-academy-content .design-academy__block-content .design-academy__text-content .design-academy__text-cta-button {
   font-family: var(--second-family);
@@ -7327,6 +6805,48 @@
   border-radius: 10px;
   background: #06828e;
   padding: 17px 30px;
+}
+
+.design-event-section {
+  background: #15222a;
+  padding: 100px 0 100px 0;
+}
+.design-event-section .design-event-conteiner .design-event-content .design-event__title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 116%;
+  color: var(--label-light-primary);
+  margin-bottom: 30px;
+}
+.design-event-section .design-event-conteiner .design-event-content .design-event__block-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.design-team-section {
+  background: #ededed;
+}
+.design-team-section .design-team-conteiner .design-team-content .design-team-h2 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 116%;
+  color: var(--label-dark-black);
+}
+.design-team-section .design-team-conteiner .design-team-content .design-team-p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 95%;
+  color: var(--label-dark-black);
+  margin: 20px 0 40px 0;
+}
+.design-team-section .design-team-conteiner .design-team-content .design-team-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 10px;
 }
 
 html {
@@ -9583,4 +9103,589 @@ body {
   text-align: center;
   color: var(--label-light-primary);
   margin-left: 15px;
+}
+
+.event-cat2 .event-block .event__card-img {
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.event-cat2 .event-block .event__card-img .event-img {
+  width: 100%;
+}
+.event-cat2 .event-block .event__card-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.event-cat2 .event-block .event__card-block .event__card-block-desck {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 126%;
+  color: var(--label-light-primary);
+  margin-bottom: 13px;
+}
+.event-cat2 .event-block .event__card-title {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 167%;
+  color: var(--label-light-primary);
+}
+
+.section4-main .section4-conteiner .section4-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section4-main .section4-conteiner .section4-content .section4__left {
+  position: relative;
+  text-align: left;
+  width: 43.3125rem;
+  height: 27.0625rem;
+}
+.section4-main .section4-conteiner .section4-content .section4__left h3 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 116%;
+  color: var(--label-dark-black);
+  padding-bottom: 27px;
+}
+.section4-main .section4-conteiner .section4-content .section4__left p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 124%;
+  color: var(--label-dark-black);
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-flanec {
+  position: absolute;
+  bottom: 17px;
+  left: 41px;
+  transform: translateX(-50%);
+  width: 30px;
+  /* Размер внешнего круга */
+  height: 30px;
+  /* Размер внешнего круга */
+  background-color: transparent;
+  /* Толщина и цвет границы */
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec .block {
+  position: absolute;
+  bottom: 105px;
+  left: -15px;
+  width: 201px;
+  height: 50px;
+  border: 1px solid #000;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec .block .line {
+  content: "";
+  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+  position: absolute;
+  left: 30px;
+  /* Центрируем линию относительно блока */
+  top: 100%;
+  /* Начинаем от нижней границы блока */
+  transform: translateX(-50%);
+  /* Корректируем смещение */
+  width: 1px;
+  /* Толщина линии */
+  height: 82px;
+  /* Длина линии */
+  background-color: #000;
+  /* Цвет линии */
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec .block .circle {
+  position: absolute;
+  top: 130px;
+  left: 30px;
+  transform: translateX(-50%);
+  width: 10px;
+  /* Размер внешнего круга */
+  height: 10px;
+  /* Размер внешнего круга */
+  background-color: transparent;
+  border: 2px solid black;
+  /* Толщина и цвет границы */
+  border-radius: 50%;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec .block .circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  /* Размер внутреннего круга */
+  height: 3px;
+  /* Размер внутреннего круга */
+  background-color: black;
+  border-radius: 50%;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec .block .block-text {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 4px;
+  color: #1d1d1b;
+  padding: 8px 0 0 10px;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec .block .block-img {
+  position: absolute;
+  bottom: 44px;
+  left: 120px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-flanec .left-flanec {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-flanec:hover .left-flanec {
+  visibility: visible;
+  opacity: 1;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-kollector {
+  position: absolute;
+  top: 1;
+  left: 41px;
+  transform: translate(200px, -160px);
+  width: 30px;
+  /* Размер внешнего круга */
+  height: 30px;
+  /* Размер внешнего круга */
+  background-color: transparent;
+  /* Толщина и цвет границы */
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector .block {
+  position: absolute;
+  top: 95px;
+  right: 5px;
+  width: 245px;
+  height: 50px;
+  border: 1px solid #000;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector .block .line {
+  content: "";
+  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+  position: absolute;
+  left: 35px;
+  /* Центрируем линию относительно блока */
+  top: 100%;
+  /* Начинаем от нижней границы блока */
+  transform: translate(200px, -130px);
+  /* Корректируем смещение */
+  width: 1px;
+  /* Толщина линии */
+  height: 82px;
+  /* Длина линии */
+  background-color: #000;
+  /* Цвет линии */
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector .block .circle {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transform: translate(200px, -120px);
+  width: 10px;
+  /* Размер внешнего круга */
+  height: 10px;
+  /* Размер внешнего круга */
+  background-color: transparent;
+  border: 2px solid black;
+  /* Толщина и цвет границы */
+  border-radius: 50%;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector .block .circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  /* Размер внутреннего круга */
+  height: 3px;
+  /* Размер внутреннего круга */
+  background-color: black;
+  border-radius: 50%;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector .block .block-text {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 4px;
+  color: #1d1d1b;
+  padding: 8px 0 0 10px;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector .block .block-img {
+  position: absolute;
+  bottom: 44px;
+  left: 90px;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-kollector .left-kollector {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-kollector:hover .left-kollector {
+  visibility: visible;
+  opacity: 1;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-adapter {
+  position: absolute;
+  top: 1;
+  left: 150px;
+  transform: translate(200px, -55px);
+  width: 50px;
+  /* Размер внешнего круга */
+  height: 50px;
+  /* Размер внешнего круга */
+  background-color: transparent;
+  /* Толщина и цвет границы */
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter .block {
+  position: absolute;
+  top: 5px;
+  left: 90px;
+  width: 245px;
+  height: 50px;
+  border: 1px solid #000;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter .block .line {
+  content: "";
+  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+  position: absolute;
+  left: -25px;
+  /* Центрируем линию относительно блока */
+  bottom: 12px;
+  /* Начинаем от нижней границы блока */
+  transform: rotate(90deg);
+  /* Корректируем смещение */
+  width: 1px;
+  /* Толщина линии */
+  height: 48px;
+  /* Длина линии */
+  background-color: #000;
+  /* Цвет линии */
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter .block .circle {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transform: translate(-85px, -24px);
+  width: 10px;
+  /* Размер внешнего круга */
+  height: 10px;
+  /* Размер внешнего круга */
+  background-color: transparent;
+  border: 2px solid black;
+  /* Толщина и цвет границы */
+  border-radius: 50%;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter .block .circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  /* Размер внутреннего круга */
+  height: 3px;
+  /* Размер внутреннего круга */
+  background-color: black;
+  border-radius: 50%;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter .block .block-text {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 4px;
+  color: #1d1d1b;
+  padding: 8px 0 0 10px;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter .block .block-img {
+  position: absolute;
+  bottom: 44px;
+  left: 90px;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-adapter .left-adapter {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-adapter:hover .left-adapter {
+  visibility: visible;
+  opacity: 1;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-zenit {
+  position: absolute;
+  top: 80%;
+  left: 180px;
+  transform: translate(200px, -55px);
+  width: 50px;
+  /* Размер внешнего круга */
+  height: 50px;
+  /* Размер внешнего круга */
+  background-color: transparent;
+  /* Толщина и цвет границы */
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit .block {
+  position: absolute;
+  top: 5px;
+  left: 90px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid #000;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit .block .line {
+  content: "";
+  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+  position: absolute;
+  left: -25px;
+  /* Центрируем линию относительно блока */
+  bottom: 12px;
+  /* Начинаем от нижней границы блока */
+  transform: rotate(90deg);
+  /* Корректируем смещение */
+  width: 1px;
+  /* Толщина линии */
+  height: 48px;
+  /* Длина линии */
+  background-color: #000;
+  /* Цвет линии */
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit .block .circle {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transform: translate(-85px, -24px);
+  width: 10px;
+  /* Размер внешнего круга */
+  height: 10px;
+  /* Размер внешнего круга */
+  background-color: transparent;
+  border: 2px solid black;
+  /* Толщина и цвет границы */
+  border-radius: 50%;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit .block .circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  /* Размер внутреннего круга */
+  height: 3px;
+  /* Размер внутреннего круга */
+  background-color: black;
+  border-radius: 50%;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit .block .block-text {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 4px;
+  color: #1d1d1b;
+  padding: 8px 0 0 10px;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit .block .block-img {
+  position: absolute;
+  bottom: 44px;
+  left: 90px;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-zenit .left-zenit {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-zenit:hover .left-zenit {
+  visibility: visible;
+  opacity: 1;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-vozduh {
+  position: absolute;
+  top: 140px;
+  right: 155px;
+  transform: translateX(-50%);
+  width: 30px;
+  /* Размер внешнего круга */
+  height: 30px;
+  /* Размер внешнего круга */
+  background-color: transparent;
+  /* Толщина и цвет границы */
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh .block {
+  position: absolute;
+  bottom: 55px;
+  left: -15px;
+  width: 180px;
+  height: 50px;
+  border: 1px solid #000;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh .block .line {
+  content: "";
+  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+  position: absolute;
+  left: 30px;
+  /* Центрируем линию относительно блока */
+  top: 100%;
+  /* Начинаем от нижней границы блока */
+  transform: translateX(-50%);
+  /* Корректируем смещение */
+  width: 1px;
+  /* Толщина линии */
+  height: 38px;
+  /* Длина линии */
+  background-color: #000;
+  /* Цвет линии */
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh .block .circle {
+  position: absolute;
+  top: 85px;
+  left: 30px;
+  transform: translateX(-50%);
+  width: 10px;
+  /* Размер внешнего круга */
+  height: 10px;
+  /* Размер внешнего круга */
+  background-color: transparent;
+  border: 2px solid black;
+  /* Толщина и цвет границы */
+  border-radius: 50%;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh .block .circle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 3px;
+  /* Размер внутреннего круга */
+  height: 3px;
+  /* Размер внутреннего круга */
+  background-color: black;
+  border-radius: 50%;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh .block .block-text {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 4px;
+  color: #1d1d1b;
+  padding: 8px 0 0 10px;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh .block .block-img {
+  position: absolute;
+  bottom: 25px;
+  left: 120px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-vozduh .left-vozduh {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.section4-main .section4-conteiner .section4-content .section4__left .block-vozduh:hover .left-vozduh {
+  visibility: visible;
+  opacity: 1;
+}
+.section4-main .section4-conteiner .section4-content .section4__right .right-content {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 11px;
+}
+.section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border: 1px solid #000;
+  padding: 20px;
+  text-align: left;
+}
+.section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1-up {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1-up .block1-up-p {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 126%;
+  color: var(--label-dark-black);
+}
+.section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1-up .blocks {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000;
+  background: #06828e;
+  text-align: right;
+}
+.section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1 .block1-down p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 124%;
+  color: var(--label-dark-black);
+}
+.section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1:hover {
+  background: #000;
+}
+.section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1:hover .blocks {
+  background: #fff;
+}
+.section4-main .section4-conteiner .section4-content .section4__right .right-content .right__block1:hover p {
+  color: #fff;
+}
+
+.cart-team .cart-team-img {
+  border-radius: 10px;
+}
+.cart-team .cart-team-img-img {
+  width: 100%;
+}
+.cart-team .cart-team-name {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 126%;
+  text-align: center;
+  color: var(--label-dark-black);
+  margin: 20px 0 5px 0;
+  text-align: center;
+  align-items: center;
+}
+.cart-team .cart-team-info {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 167%;
+  text-align: center;
+  color: var(--label-dark-black);
+  text-align: center;
+  align-items: center;
 }

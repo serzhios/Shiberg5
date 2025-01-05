@@ -1,0 +1,33 @@
+.cart-team {
+    .cart-team-img {
+        border-radius: 10px;
+
+        &-img {
+            width: 100%;
+        }
+    }
+
+    .cart-team-name {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 126%;
+        text-align: center;
+        color: var(--label-dark-black);
+        margin: 20px 0 5px 0;
+        text-align: center;
+        align-items: center;
+
+    }
+
+    .cart-team-info {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 167%;
+        text-align: center;
+        color: var(--label-dark-black);
+        text-align: center;
+        align-items: center;
+    }
+}

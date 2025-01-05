@@ -4,7 +4,7 @@
         margin-bottom: 100px;
 
         .articles-conteiner {
-            padding: 0 0 0 40px;
+            // padding: 0 0 0 40px;
 
             .articles-content {
                 display: grid;
@@ -157,7 +157,7 @@
         background: #15222a;
 
         .smart-conteiner {
-            padding: 0 0 0 40px;
+            // padding: 0 0 0 40px;
 
             .smart-content {
                 .smart-up {
@@ -245,7 +245,7 @@
     .news-filter-main {
         .news-filter-conteiner {
             .news-filter-content {
-                margin-left: 40px;
+                // margin-left: 40px;
 
                 .news-filter__filter {
                     &-box {
@@ -453,6 +453,7 @@
     }
 
     .acadeny-video-main {
+        margin-bottom: 100px;
         .academy-video__conteiner {
             .academy-video__content {
                 .academy-video__block {
@@ -560,7 +561,7 @@
                                 font-size: 16px;
                                 line-height: 131%;
                                 color: var(--label-dark-black);
-                                margin: 10px 0 50px 0;
+                                margin: 10px 0 50px 30px;
                             }
 
                             .academy-video__text-cta-button {
