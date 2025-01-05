@@ -1,0 +1,653 @@
+.section4-main {
+    .section4-conteiner {
+      .section4-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .section4__left {
+          position: relative;
+          text-align: left;
+          width: 43.3125rem;
+          height: 27.0625rem;
+
+          h3 {
+            font-family: var(--second-family);
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 116%;
+            color: var(--label-dark-black);
+            padding-bottom: 27px;
+          }
+
+          p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 124%;
+            color: var(--label-dark-black);
+          }
+
+          .block-flanec {
+            position: absolute;
+            bottom: 17px;
+            left: 41px;
+            transform: translateX(-50%);
+            width: 30px;
+            /* Размер внешнего круга */
+            height: 30px;
+            /* Размер внешнего круга */
+            background-color: transparent;
+            // border: 2px solid rgb(217, 17, 17);
+            /* Толщина и цвет границы */
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+
+            // visibility: hidden;
+            .left-flanec {
+
+              .block {
+                // visibility: hidden;
+
+                position: absolute;
+                bottom: 105px;
+                left: -15px;
+                width: 201px;
+                height: 50px;
+                border: 1px solid #000;
+
+                .line {
+                  content: '';
+                  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+                  position: absolute;
+                  left: 30px;
+                  /* Центрируем линию относительно блока */
+                  top: 100%;
+                  /* Начинаем от нижней границы блока */
+                  transform: translateX(-50%);
+                  /* Корректируем смещение */
+                  width: 1px;
+                  /* Толщина линии */
+                  height: 82px;
+                  /* Длина линии */
+                  background-color: #000;
+                  /* Цвет линии */
+                }
+
+                .circle {
+                  position: absolute;
+                  top: 130px;
+                  left: 30px;
+                  transform: translateX(-50%);
+                  width: 10px;
+                  /* Размер внешнего круга */
+                  height: 10px;
+                  /* Размер внешнего круга */
+                  background-color: transparent;
+                  border: 2px solid black;
+                  /* Толщина и цвет границы */
+                  border-radius: 50%;
+                }
+
+                .circle::after {
+                  content: '';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 3px;
+                  /* Размер внутреннего круга */
+                  height: 3px;
+                  /* Размер внутреннего круга */
+                  background-color: black;
+                  border-radius: 50%;
+                }
+
+                .block-text {
+                  font-family: var(--font-family);
+                  font-weight: 300;
+                  font-size: 4px;
+                  color: #1d1d1b;
+                  padding: 8px 0 0 10px;
+                }
+
+                .block-img {
+                  position: absolute;
+                  bottom: 44px;
+                  left: 120px;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+
+          .block-flanec .left-flanec {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+
+          .block-flanec:hover .left-flanec {
+            visibility: visible;
+            opacity: 1;
+          }
+
+          .block-kollector {
+            position: absolute;
+            top: 1;
+            left: 41px;
+            // transform: translateX(-50%);
+            transform: translate(200px, -160px);
+
+            width: 30px;
+            /* Размер внешнего круга */
+            height: 30px;
+            /* Размер внешнего круга */
+            background-color: transparent;
+            // border: 2px solid rgb(217, 17, 17);
+            /* Толщина и цвет границы */
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+
+            // visibility: hidden;
+            .left-kollector {
+
+              .block {
+                // visibility: hidden;
+
+                position: absolute;
+                top: 95px;
+                right: 5px;
+                width: 245px;
+                height: 50px;
+                border: 1px solid #000;
+
+                .line {
+                  content: '';
+                  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+                  position: absolute;
+                  left: 35px;
+                  /* Центрируем линию относительно блока */
+                  top: 100%;
+                  /* Начинаем от нижней границы блока */
+                  // transform: translate(50px, 50px);
+                  transform: translate(200px, -130px);
+                  //
+                  /* Корректируем смещение */
+                  width: 1px;
+                  /* Толщина линии */
+                  height: 82px;
+                  /* Длина линии */
+                  background-color: #000;
+                  /* Цвет линии */
+                }
+
+                .circle {
+                  position: absolute;
+                  top: 30px;
+                  left: 30px;
+                  // transform: translateX(-50%);
+                  transform: translate(200px, -120px);
+
+                  width: 10px;
+                  /* Размер внешнего круга */
+                  height: 10px;
+                  /* Размер внешнего круга */
+                  background-color: transparent;
+                  border: 2px solid black;
+                  /* Толщина и цвет границы */
+                  border-radius: 50%;
+                }
+
+                .circle::after {
+                  content: '';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 3px;
+                  /* Размер внутреннего круга */
+                  height: 3px;
+                  /* Размер внутреннего круга */
+                  background-color: black;
+                  border-radius: 50%;
+                }
+
+                .block-text {
+                  font-family: var(--font-family);
+                  font-weight: 300;
+                  font-size: 4px;
+                  color: #1d1d1b;
+                  padding: 8px 0 0 10px;
+                }
+
+                .block-img {
+                  position: absolute;
+                  bottom: 44px;
+                  left: 90px;
+                  width: 90%;
+                  height: 90%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+
+          .block-kollector .left-kollector {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+
+          .block-kollector:hover .left-kollector {
+            visibility: visible;
+            opacity: 1;
+          }
+
+          .block-adapter {
+            position: absolute;
+            top: 1;
+            left: 150px;
+            // transform: translateX(-50%);
+            transform: translate(200px, -55px);
+
+            width: 50px;
+            /* Размер внешнего круга */
+            height: 50px;
+            /* Размер внешнего круга */
+            background-color: transparent;
+            // border: 2px solid rgb(217, 17, 17);
+            /* Толщина и цвет границы */
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+
+            // visibility: hidden;
+            .left-adapter {
+
+              .block {
+                // visibility: hidden;
+
+                position: absolute;
+                top: 5px;
+                left: 90px;
+                width: 245px;
+                height: 50px;
+                border: 1px solid #000;
+
+                .line {
+                  content: '';
+                  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+                  position: absolute;
+                  left: -25px;
+                  /* Центрируем линию относительно блока */
+                  bottom: 12px;
+                  /* Начинаем от нижней границы блока */
+                  // transform: translate(50px, 50px);
+                  // transform: translate(100px, -120px);
+                  transform: rotate(90deg);
+                  //
+                  /* Корректируем смещение */
+                  width: 1px;
+                  /* Толщина линии */
+                  height: 48px;
+                  /* Длина линии */
+                  background-color: #000;
+                  /* Цвет линии */
+                }
+
+                .circle {
+                  position: absolute;
+                  top: 30px;
+                  left: 30px;
+                  // transform: translateX(-50%);
+                  transform: translate(-85px, -24px);
+
+                  width: 10px;
+                  /* Размер внешнего круга */
+                  height: 10px;
+                  /* Размер внешнего круга */
+                  background-color: transparent;
+                  border: 2px solid black;
+                  /* Толщина и цвет границы */
+                  border-radius: 50%;
+                }
+
+                .circle::after {
+                  content: '';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 3px;
+                  /* Размер внутреннего круга */
+                  height: 3px;
+                  /* Размер внутреннего круга */
+                  background-color: black;
+                  border-radius: 50%;
+                }
+
+                .block-text {
+                  font-family: var(--font-family);
+                  font-weight: 300;
+                  font-size: 4px;
+                  color: #1d1d1b;
+                  padding: 8px 0 0 10px;
+                }
+
+                .block-img {
+                  position: absolute;
+                  bottom: 44px;
+                  left: 90px;
+                  width: 90%;
+                  height: 90%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+
+          .block-adapter .left-adapter {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+
+          .block-adapter:hover .left-adapter {
+            visibility: visible;
+            opacity: 1;
+          }
+
+          .block-zenit {
+            position: absolute;
+            top: 80%;
+            left: 180px;
+            // transform: translateX(-50%);
+            transform: translate(200px, -55px);
+
+            width: 50px;
+            /* Размер внешнего круга */
+            height: 50px;
+            /* Размер внешнего круга */
+            background-color: transparent;
+            // border: 2px solid rgb(217, 17, 17);
+            /* Толщина и цвет границы */
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+
+            // visibility: hidden;
+            .left-zenit {
+
+              .block {
+                // visibility: hidden;
+
+                position: absolute;
+                top: 5px;
+                left: 90px;
+                width: 150px;
+                height: 50px;
+                border: 1px solid #000;
+
+                .line {
+                  content: '';
+                  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+                  position: absolute;
+                  left: -25px;
+                  /* Центрируем линию относительно блока */
+                  bottom: 12px;
+                  /* Начинаем от нижней границы блока */
+                  // transform: translate(50px, 50px);
+                  // transform: translate(100px, -120px);
+                  transform: rotate(90deg);
+                  //
+                  /* Корректируем смещение */
+                  width: 1px;
+                  /* Толщина линии */
+                  height: 48px;
+                  /* Длина линии */
+                  background-color: #000;
+                  /* Цвет линии */
+                }
+
+                .circle {
+                  position: absolute;
+                  top: 30px;
+                  left: 30px;
+                  // transform: translateX(-50%);
+                  transform: translate(-85px, -24px);
+
+                  width: 10px;
+                  /* Размер внешнего круга */
+                  height: 10px;
+                  /* Размер внешнего круга */
+                  background-color: transparent;
+                  border: 2px solid black;
+                  /* Толщина и цвет границы */
+                  border-radius: 50%;
+                }
+
+                .circle::after {
+                  content: '';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 3px;
+                  /* Размер внутреннего круга */
+                  height: 3px;
+                  /* Размер внутреннего круга */
+                  background-color: black;
+                  border-radius: 50%;
+                }
+
+                .block-text {
+                  font-family: var(--font-family);
+                  font-weight: 300;
+                  font-size: 4px;
+                  color: #1d1d1b;
+                  padding: 8px 0 0 10px;
+                }
+
+                .block-img {
+                  position: absolute;
+                  bottom: 44px;
+                  left: 90px;
+                  width: 90%;
+                  height: 90%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+
+          .block-zenit .left-zenit {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+
+          .block-zenit:hover .left-zenit {
+            visibility: visible;
+            opacity: 1;
+          }
+
+          .block-vozduh {
+            position: absolute;
+            top: 140px;
+            right: 155px;
+            transform: translateX(-50%);
+            width: 30px;
+            /* Размер внешнего круга */
+            height: 30px;
+            /* Размер внешнего круга */
+            background-color: transparent;
+            // border: 2px solid rgb(217, 17, 17);
+            /* Толщина и цвет границы */
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+
+            // visibility: hidden;
+            .left-vozduh {
+
+              .block {
+                // visibility: hidden;
+
+                position: absolute;
+                bottom: 55px;
+                left: -15px;
+                width: 180px;
+                height: 50px;
+                border: 1px solid #000;
+
+                .line {
+                  content: '';
+                  /* Пустое содержание, чтобы псевдоэлемент отобразился */
+                  position: absolute;
+                  left: 30px;
+                  /* Центрируем линию относительно блока */
+                  top: 100%;
+                  /* Начинаем от нижней границы блока */
+                  transform: translateX(-50%);
+                  /* Корректируем смещение */
+                  width: 1px;
+                  /* Толщина линии */
+                  height: 38px;
+                  /* Длина линии */
+                  background-color: #000;
+                  /* Цвет линии */
+                }
+
+                .circle {
+                  position: absolute;
+                  top: 85px;
+                  left: 30px;
+                  transform: translateX(-50%);
+                  width: 10px;
+                  /* Размер внешнего круга */
+                  height: 10px;
+                  /* Размер внешнего круга */
+                  background-color: transparent;
+                  border: 2px solid black;
+                  /* Толщина и цвет границы */
+                  border-radius: 50%;
+                }
+
+                .circle::after {
+                  content: '';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 3px;
+                  /* Размер внутреннего круга */
+                  height: 3px;
+                  /* Размер внутреннего круга */
+                  background-color: black;
+                  border-radius: 50%;
+                }
+
+                .block-text {
+                  font-family: var(--font-family);
+                  font-weight: 300;
+                  font-size: 4px;
+                  color: #1d1d1b;
+                  padding: 8px 0 0 10px;
+                }
+
+                .block-img {
+                  position: absolute;
+                  bottom: 25px;
+                  left: 120px;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+
+          .block-vozduh .left-vozduh {
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s;
+          }
+
+          .block-vozduh:hover .left-vozduh {
+            visibility: visible;
+            opacity: 1;
+          }
+
+        }
+
+        .section4__right {
+
+          .right-content {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 11px;
+
+            .right__block1 {
+              display: grid;
+              grid-template-rows: 1fr 1fr;
+              border: 1px solid #000;
+              padding: 20px;
+              // gap: 17px;
+              text-align: left;
+
+              &-up {
+                display: grid;
+                grid-template-columns: auto auto;
+                justify-content: space-between;
+                // display: flex;
+                // flex-direction: column;
+
+                .block1-up-p {
+                  font-family: var(--font-family);
+                  font-weight: 700;
+                  font-size: 19px;
+                  line-height: 126%;
+                  color: var(--label-dark-black);
+                }
+
+                .blocks {
+                  width: 30px;
+                  height: 30px;
+                  border: 1px solid #000;
+                  background: #06828e;
+                  text-align: right;
+                }
+              }
+
+              .block1-down {
+                p {
+                  font-family: var(--font-family);
+                  font-weight: 400;
+                  font-size: 17px;
+                  line-height: 124%;
+                  color: var(--label-dark-black);
+                }
+              }
+            }
+
+            .right__block1:hover {
+              background: #000;
+
+              .blocks {
+                background: #fff;
+              }
+
+              p {
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
