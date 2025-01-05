@@ -1,0 +1,36 @@
+.event-cat2 {
+    .event-block {
+        .event__card-img {
+            border-radius: 10px;
+            margin-bottom: 15px;
+            .event-img {
+                width: 100%;
+            }
+        }
+            .event__card-block {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                .event__card-block-desck {
+
+                    font-family: var(--font-family);
+                    font-weight: 700;
+                    font-size: 19px;
+                    line-height: 126%;
+                    color: var(--label-light-primary);
+                    margin-bottom: 13px;
+                }
+            }
+
+            .event__card-title {
+                font-family: var(--font-family);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 167%;
+                color: var(--label-light-primary);
+            }
+
+
+    }
+}
