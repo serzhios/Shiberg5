@@ -473,10 +473,11 @@
                             #review {
                                 width: 100%;
                                 resize: none;
-                                height: 100px;
+                                height: 160px;
+                                // height: 100%;
                                 // width: calc(50% - 10px);
                                 padding: 10px;
-                                margin: 5px 5px 10px 0;
+                                // margin: 5px 5px 10px 0;
                                 border: 1px solid #ccc;
                                 border-radius: 5px;
                                 font-size: 14px;
@@ -565,7 +566,35 @@
                                 justify-content: center;
                                 background: #06828e;
                                 margin-right: 10px;
-
+                                input[type="checkbox"] {
+                                    display: none;
+                                }
+                                span {
+                                    display: inline-block;
+                                    width: 24px; /* Диаметр круга */
+                                    height: 24px; /* Диаметр круга */
+                                    border: 2px solid #008080; /* Цвет границы круга */
+                                    border-radius: 50%; /* Делает элемент кругом */
+                                    background-color: white; /* Цвет фона */
+                                    cursor: pointer; /* Иконка "руки" при наведении */
+                                    position: relative;
+                                }
+                                input[type="checkbox"]:checked + span {
+                                    background-color: #008080; /* Цвет фона при отметке */
+                                    border-color: #008080; /* Цвет границы при отметке */
+                                }
+                                input[type="checkbox"]:checked + span::after {
+                                    content: ""; /* Генерируем псевдоэлемент галочки */
+                                    display: block;
+                                    width: 6px;
+                                    height: 12px;
+                                    border: solid white;
+                                    border-width: 0 2px 2px 0;
+                                    transform: rotate(45deg); /* Галочка */
+                                    position: absolute;
+                                    top: 2px;
+                                    left: 8px;
+                                }
 
 
                             }
@@ -576,9 +605,10 @@
                                 font-size: 14px;
                                 line-height: 130%;
                                 color: #fff;
-                                .personal-data{
+
+                                .personal-data {
                                     text-decoration: underline;
-text-decoration-skip-ink: none;
+                                    text-decoration-skip-ink: none;
                                 }
                             }
 

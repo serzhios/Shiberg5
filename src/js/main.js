@@ -22,6 +22,7 @@ import {Mini} from "./module/mini.js"
 import { optionSlide } from "./module/optionSlide.js";
 import { writeSlider } from "./module/writeSleder.js";
 import { designSlider } from "./module/designSlider.js";
+import {designQuestion} from "./module/designQuestion.js"
 // import {optionMiniSlider} from "./module/optionMiniSlider.js";
 document.querySelectorAll('.section6-list').forEach(function(item) {
     item.addEventListener('click', function() {
@@ -126,3 +127,4 @@ optionSlide()
 writeSlider()
 // optionMiniSlider()
 designSlider()
+designQuestion()
