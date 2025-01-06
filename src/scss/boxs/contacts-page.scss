@@ -532,59 +532,7 @@
                         top: 20%;
                         left: 42%;
 
-                        .map-block1 {
-                            border-radius: 10px;
-                            // width: 271px;
-                            // height: 90px;
-                            background: #06828e;
-                            padding: 15px 17px;
-
-                            // display: flex;
-                            // flex-direction: column;
-                            .map-text {
-                                font-family: var(--font-family);
-                                font-weight: 500;
-                                font-size: 14px;
-                                line-height: 132%;
-                                text-align: center;
-                                color: #fff;
-                                padding-bottom: 12px;
-
-                            }
-
-                            p {
-                                font-family: var(--font-family);
-                                font-weight: 400;
-                                font-size: 12px;
-                                line-height: 117%;
-                                text-align: center;
-                                color: #fff;
-
-
-                            }
-                        }
-
-                        .map-block2 {
-                            margin-top: 10px;
-                            position: relative;
-                            width: 50px;
-
-                            .map-img1 {}
-
-                            .map-img2 {
-                                position: absolute;
-                                top: 30%;
-                                right: 8px;
-
-                                // z-index: 1;
-                                // border: 1px solid #000;
-                                // border-radius: 10px;
-                                // width: 15px;
-                                // height: 15px;
-                                // background: #000;
-
-                            }
-                        }
+                     
                     }
                 }
             }
