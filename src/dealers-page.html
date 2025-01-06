@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/components/head.html',{"title":"Дилерам"})
+    @@include('html/boxs/header.html')
+<body>
+    <main>
+
+          <section class="daelers-partners-section">
+<div class="container daelers-partners-conteiner">
+    <div class="content daelers-partners-content">
+        <div class="daelers-partners__block ">
+            <img class="daelers-partners-img-sl" src="img/dealers/fon1.png" alt="img">
+            <div class="daelers-partners__block-conteiner">
+
+              <div class="daelers-partners-title">
+                <div class="daelers-partners-reviews">
+                    @@include('html/components/breadcrumbs.html',{"Link":"Дилерам"})
+                  </div>
+                  <div class="partners-title-svg1">
+                    <svg width="301" height="60" viewBox="0 0 301 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M25 33.821C100.646 7.00966 205.196 52.2992 276 27.0157" stroke="#06828E" stroke-width="50" stroke-linecap="round" />
+                      </svg>
+                  </div>
+                <p class="partners-title">Мы ищем дилеров <br>и партнеров<br><span> в регионах </span></p>
+                <p class="partners-title2">Текстовое поле Текстовое поле Текстовое поле </p>
+
+
+                @@include('html/components/btn2.html',{"textBtn":"Оставить заявку"})
+
+              </div>
+
+            </div>
+            <div class="daelers-partners-right">
+                @@include('html/components/shourum-cart.html')
+
+                          </div>
+
+          </div>
+    </div>
+</div>
+          </section>
+          <section class="reviews-main  ">
+            <div class="container reviews-conteiner">
+
+            </div>
+          </section>
+          <section class="section dealers-become-section">
+<div class="container dealers-become-conteiner">
+    <div class="content dealers-become-content">
+        <div class="become-left">
+            <h3 class="become-left__title">Стань дилером SCHIBERG</h3>
+            <p class="become-left__desc">Расширь свой бизнес!</p>
+            <div class="become-left__block">
+                @@include('html/components/card2.html', {"urlImg": "img/dealers/icon1.svg", "desc": "Выгодные условия % сотрудничества"})
+
+                @@include('html/components/card2.html', {"urlImg": "img/dealers/icon4.svg", "desc": "Индивидуальная система скидок"})
+                @@include('html/components/card2.html', {"urlImg": "img/dealers/icon2.svg", "desc": "Специалные условия для дизайнеров и проектировщиков"})
+                @@include('html/components/card2.html', {"urlImg": "img/dealers/icon5.svg", "desc": "Выезд специалиста на объект и предоставление образцов"})
+                @@include('html/components/card2.html', {"urlImg": "img/dealers/icon3.svg", "desc": "Обучение продукту и техническая поддержка"})
+                @@include('html/components/card2.html', {"urlImg": "img/dealers/icon6.svg", "desc": "Рекламные инструменты для продвижения"})
+            </div>
+        </div>
+        <div class="become-right">
+            <div class="become-right-form">
+                <h2 class="become__title-form">Заполните форму, мы оперативно свяжемся и обсудим с вами варианты сотрудничества!
+                </h2>
+                  <form action="#" method="POST">
+                      <div class="become-name">
+                          <!-- <label for="name">Имя</label> -->
+                          <input type="text" id="name" name="name"
+                          placeholder="Ваше имя" required>
+                      </div>
+                      <div class="become-city">
+                          <!-- <label for="name">Имя</label> -->
+                          <input type="text" id="city" name="name"
+                          placeholder="Город" required>
+                      </div>
+
+                      <div class="become-email">
+                          <!-- <label for="phone">Номер телефона</label> -->
+                          <input type="email" id="email" name="email"
+                          placeholder="Email" required>
+                      </div>
+                      <div class="become-tel">
+                          <!-- <label for="phone">Номер телефона</label> -->
+                          <input type="tel" id="phone" name="phone"
+                          placeholder="Телефон" required>
+                      </div>
+
+
+                      <button type="submit" class="become-button">Отправить</button>
+                  </form>
+              </div>
+
+
+
+
+        </div>
+    </div>
+</div>
+          </section>
+    </main>
+    @@include('html/boxs/ivitation.html')
+
+    @@include('html/boxs/footer.html')
+
+</body>
+</html>
