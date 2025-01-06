@@ -1,0 +1,43 @@
+.shourum-cart {
+    display: flex;
+    flex-direction: column;
+    // text-align: center;
+    align-items: center;
+   
+
+    .shourum-block1 {
+        border-radius: 10px;
+        // width: 271px;
+        // height: 90px;
+        background: #06828e;
+        padding: 15px 17px;
+
+        // display: flex;
+        // flex-direction: column;
+        .shourum-text {
+            font-family: var(--font-family);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 132%;
+            text-align: center;
+            color: #fff;
+            padding-bottom: 12px;
+
+        }
+
+        p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 117%;
+            text-align: center;
+            color: #fff;
+
+
+        }
+    }
+
+    .shourum-block2 {
+      .shourum-img1{}
+    }
+}

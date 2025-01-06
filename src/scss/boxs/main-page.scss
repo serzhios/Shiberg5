@@ -64,7 +64,7 @@
 
           .title-svg1 {
             position: absolute;
-            // top: 0;
+            top: 22%;
             left: 40px;
           }
 
@@ -78,17 +78,18 @@
             z-index: 1;
 
             span {
-              color: var(--color-wite)
+            color: var(--label-light-primary);
+
             }
 
             width: 30.5625rem;
             height: 9rem;
             font-family: var(--font-family);
             font-weight: 700;
-            font-size: 44.8px;
+            font-size: 40px;
             line-height: 118%;
             color: var(--label-dark-black);
-            text-align: left;
+
           }
 
           .slide-subtitle {
@@ -353,7 +354,7 @@
     }
   }
 
- 
+
 
   .kwis-main {
 
