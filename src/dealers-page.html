@@ -1,108 +1,364 @@
 <!DOCTYPE html>
 <html lang="ru">
-    @@include('html/components/head.html',{"title":"Дилерам"})
-    @@include('html/boxs/header.html')
+@@include('html/components/head.html',{"title":"Дилерам"})
+@@include('html/boxs/header.html')
+
 <body>
     <main>
 
-          <section class="daelers-partners-section">
-<div class="container daelers-partners-conteiner">
-    <div class="content daelers-partners-content">
-        <div class="daelers-partners__block ">
-            <img class="daelers-partners-img-sl" src="img/dealers/fon1.png" alt="img">
-            <div class="daelers-partners__block-conteiner">
+        <section class="daelers-partners-section">
+            <div class="container daelers-partners-conteiner">
+                <div class="content daelers-partners-content">
+                    <div class="daelers-partners__block ">
+                        <img class="daelers-partners-img-sl" src="img/dealers/fon1.png" alt="img">
+                        <div class="daelers-partners__block-conteiner">
 
-              <div class="daelers-partners-title">
-                <div class="daelers-partners-reviews">
-                    @@include('html/components/breadcrumbs.html',{"Link":"Дилерам"})
-                  </div>
-                  <div class="partners-title-svg1">
-                    <svg width="301" height="60" viewBox="0 0 301 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25 33.821C100.646 7.00966 205.196 52.2992 276 27.0157" stroke="#06828E" stroke-width="50" stroke-linecap="round" />
-                      </svg>
-                  </div>
-                <p class="partners-title">Мы ищем дилеров <br>и партнеров<br><span> в регионах </span></p>
-                <p class="partners-title2">Текстовое поле Текстовое поле Текстовое поле </p>
+                            <div class="daelers-partners-title">
+                                <div class="daelers-partners-reviews">
+                                    @@include('html/components/breadcrumbs.html',{"Link":"Дилерам"})
+                                </div>
+                                <div class="partners-title-svg1">
+                                    <svg width="301" height="60" viewBox="0 0 301 60" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M25 33.821C100.646 7.00966 205.196 52.2992 276 27.0157"
+                                            stroke="#06828E" stroke-width="50" stroke-linecap="round" />
+                                    </svg>
+                                </div>
+                                <p class="partners-title">Мы ищем дилеров <br>и партнеров<br><span> в регионах </span>
+                                </p>
+                                <p class="partners-title2">Текстовое поле Текстовое поле Текстовое поле </p>
 
 
-                @@include('html/components/btn2.html',{"textBtn":"Оставить заявку"})
+                                @@include('html/components/btn2.html',{"textBtn":"Оставить заявку"})
 
-              </div>
+                            </div>
 
+                        </div>
+                        <div class="daelers-partners-right">
+                            @@include('html/components/shourum-cart.html')
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="daelers-partners-right">
-                @@include('html/components/shourum-cart.html')
-
-                          </div>
-
-          </div>
-    </div>
-</div>
-          </section>
-          <section class="reviews-main  ">
+        </section>
+        <!-- <section class="reviews-main  ">
             <div class="container reviews-conteiner">
 
             </div>
-          </section>
-          <section class="section dealers-become-section">
-<div class="container dealers-become-conteiner">
-    <div class="content dealers-become-content">
-        <div class="become-left">
-            <h3 class="become-left__title">Стань дилером SCHIBERG</h3>
-            <p class="become-left__desc">Расширь свой бизнес!</p>
-            <div class="become-left__block">
-                @@include('html/components/card2.html', {"urlImg": "img/dealers/icon1.svg", "desc": "Выгодные условия % сотрудничества"})
+        </section> -->
+        <section class="section dealers-become-section">
+            <div class="container dealers-become-conteiner">
+                <div class="content dealers-become-content">
+                    <div class="become-left">
+                        <h3 class="become-left__title">Стань дилером SCHIBERG</h3>
+                        <p class="become-left__desc">Расширь свой бизнес!</p>
+                        <div class="become-left__block">
+                            @@include('html/components/card2.html', {"urlImg": "img/dealers/icon1.svg", "desc":
+                            "Выгодные условия % сотрудничества"})
 
-                @@include('html/components/card2.html', {"urlImg": "img/dealers/icon4.svg", "desc": "Индивидуальная система скидок"})
-                @@include('html/components/card2.html', {"urlImg": "img/dealers/icon2.svg", "desc": "Специалные условия для дизайнеров и проектировщиков"})
-                @@include('html/components/card2.html', {"urlImg": "img/dealers/icon5.svg", "desc": "Выезд специалиста на объект и предоставление образцов"})
-                @@include('html/components/card2.html', {"urlImg": "img/dealers/icon3.svg", "desc": "Обучение продукту и техническая поддержка"})
-                @@include('html/components/card2.html', {"urlImg": "img/dealers/icon6.svg", "desc": "Рекламные инструменты для продвижения"})
+                            @@include('html/components/card2.html', {"urlImg": "img/dealers/icon4.svg", "desc":
+                            "Индивидуальная система скидок"})
+                            @@include('html/components/card2.html', {"urlImg": "img/dealers/icon2.svg", "desc":
+                            "Специалные условия для дизайнеров и проектировщиков"})
+                            @@include('html/components/card2.html', {"urlImg": "img/dealers/icon5.svg", "desc": "Выезд
+                            специалиста на объект и предоставление образцов"})
+                            @@include('html/components/card2.html', {"urlImg": "img/dealers/icon3.svg", "desc":
+                            "Обучение продукту и техническая поддержка"})
+                            @@include('html/components/card2.html', {"urlImg": "img/dealers/icon6.svg", "desc":
+                            "Рекламные инструменты для продвижения"})
+                        </div>
+                    </div>
+                    <div class="become-right">
+
+
+                        <div class="become-right-form">
+                            <h2 class="become__title-form">Заполните форму, мы оперативно свяжемся и обсудим с вами
+                                варианты сотрудничества!
+                            </h2>
+                            <form action="#" method="POST">
+                                <div class="become-name">
+                                    <!-- <label for="name">Имя</label> -->
+                                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                                </div>
+                                <div class="become-city">
+                                    <!-- <label for="name">Имя</label> -->
+                                    <input type="text" id="city" name="name" placeholder="Город" required>
+                                </div>
+
+                                <div class="become-email">
+                                    <!-- <label for="phone">Номер телефона</label> -->
+                                    <input type="email" id="email" name="email" placeholder="Email" required>
+                                </div>
+                                <div class="become-tel">
+                                    <!-- <label for="phone">Номер телефона</label> -->
+                                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                                </div>
+
+
+                                <button type="submit" class="become-button">Отправить</button>
+                            </form>
+                        </div>
+                        <div class="become-right-title">
+                            Текстовое поле описание сотрудничества
+                            Текстовое поле описание сотрудничества
+                            Текстовое поле описание сотрудничества
+                            Текстовое поле описание сотрудничества
+                        </div>
+
+
+
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="become-right">
-            <div class="become-right-form">
-                <h2 class="become__title-form">Заполните форму, мы оперативно свяжемся и обсудим с вами варианты сотрудничества!
-                </h2>
-                  <form action="#" method="POST">
-                      <div class="become-name">
-                          <!-- <label for="name">Имя</label> -->
-                          <input type="text" id="name" name="name"
-                          placeholder="Ваше имя" required>
-                      </div>
-                      <div class="become-city">
-                          <!-- <label for="name">Имя</label> -->
-                          <input type="text" id="city" name="name"
-                          placeholder="Город" required>
-                      </div>
+        </section>
+        <section class="section dealers-question-section">
+            <div class="container dealers-question-conteiner">
+                <div class="content dealers-question-content">
+                    <div class="dealers-question__right active ">
+                        <div class="dealers-question__right-container">
+                            <h3 class="dealers-question-h3">Ответы на вопросы</h3>
+                            <div class="dealers-question-faq-item">
+                                <button class="dealers-question-faq-question">
+                                    Сроки изготовления
+                                    <span class="toggle-icon">+</span>
+                                </button>
+                                <div class="dealers-question-faq-answer">
+                                    <p>Ответ</p>
+                                </div>
+                            </div>
 
-                      <div class="become-email">
-                          <!-- <label for="phone">Номер телефона</label> -->
-                          <input type="email" id="email" name="email"
-                          placeholder="Email" required>
-                      </div>
-                      <div class="become-tel">
-                          <!-- <label for="phone">Номер телефона</label> -->
-                          <input type="tel" id="phone" name="phone"
-                          placeholder="Телефон" required>
-                      </div>
+                            <div class="dealers-question-faq-item">
+                                <button class="dealers-question-faq-question">
+                                    Гарантии
+                                    <span class="toggle-icon">+</span>
+                                </button>
+                                <div class="dealers-question-faq-answer" style="display:none">
+                                    <p>Ответ не предоставлен.</p>
+                                </div>
+                            </div>
+                            <div class="dealers-question-faq-item">
+                                <button class="dealers-question-faq-question">
+                                    Поддержка
+                                    <span class="toggle-icon">+</span>
+                                </button>
+                                <div class="dealers-question-faq-answer" style="display:none">
+                                    <p>Ответ не предоставлен.</p>
+                                </div>
+                            </div>
 
 
-                      <button type="submit" class="become-button">Отправить</button>
-                  </form>
-              </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
 
+        </section>
+        <section class="section dealers-stages-section">
 
+            <div class=" container dealers-stages-conteiner">
+                <div class="content dealers-stages-content">
+                    <div class="dealers-stages-title">
+                        Этапы сотрудничества
+                    </div>
+                    <div class="dealers-stages-block">
+                        @@include('html/components/delealers-stages-cart.html', {"title": "01", "subtitle":"Любой размер
+                        и дизайн под заказ","text":"Текстовое описание этапа Текстовое описание этапа Текстовое описание
+                        этапа"})
+                        @@include('html/components/delealers-stages-cart.html', {"title": "02", "subtitle":"Возможность
+                        установки до «чистового ремонта»","text":"Текстовое описание этапа Текстовое описание этапа
+                        Текстовое описание этапа"})
+                        @@include('html/components/delealers-stages-cart.html', {"title": "03", "subtitle":"Авторские
+                        модели","text":"Текстовое описание этапа Текстовое описание этапа Текстовое описание этапа"})
+                    </div>
+                </div>
+            </div>
+        </section>
+        @@include('html/components/quiz.html')
+        <section class="section dealers-partners-section">
+            <div class="container dealers-partners-conteiner">
+                <div class="content dealers-partners-content">
+                    <p class="dealers-partners-title">Наши партнеры</p>
+                    <div class="dealers-partners-block">
+                        <div class="dealers-partners-block-left">
+                            <div class="partners-region-header">
+                                <span class="partners-title">Регион</span>
+                                <form class="partners-form">
+                                    <!-- <label for="options">Выберите одно из следующих:</label> -->
+                                    <select class="partners-select" id="options" name="options">
+                                        <option  value="option1">Показать большее</option>
+                                        <option  data-target="block1" value="option2">Мурманск</option>
+                                        <option  data-target="block2"value="option3">Москва</option>
+                                    </select>
+                                </form>
+                            </div>
+                            <div class="partners-block-button">
+                                <button class="partners-region-button active" data-target="peterburg"><span>Г. Санкт-Петербург</span><svg
+                                        width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path class="partners-path" d="M7.5 15L12.5 10L7.5 5" stroke="black"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg></button>
+                                <button class="partners-region-button " data-target="orel"><span>Орловская область</span><svg width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.5 15L12.5 10L7.5 5" stroke="black" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></button>
+                                <button class="partners-region-button " data-target="omsk"><span>Омская область</span><svg width="20"
+                                        height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.5 15L12.5 10L7.5 5" stroke="black" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></button>
+                                <button class="partners-region-button " data-target="novosibirsk"><span>Новосибирская область</span><svg
+                                        width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.5 15L12.5 10L7.5 5" stroke="black" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg></button>
+                            </div>
 
-        </div>
-    </div>
-</div>
-          </section>
+                        </div>
+                        <div class="dealers-partners-block-right active" id="peterburg">
+                            <div class="partners-title">
+                                <h3 class="partners-right-title">
+                                    Название компании
+                                </h3>
+                                <p class="partners-right-subtitle">г. Санкт-Петербург, «ARTPLAY– Центр Дизайна»
+                                    м. Курская, 105120, Нижняя Сыромятническая,
+                                    д. 10 стр. 3, этаж 2, офис 114.1/1
+                                </p>
+                                <img class="partners-right-img" src="img/dealers/logo2.png" alt="logo">
+                            </div>
+                            <div class="partners-link">
+                                @@include('html/boxs/box-network.html')
+                                <ul class=" partners-list list-reset">
+                                    <li>Отдел качества</li>
+                                    <li>
+                                      <a class="partners-link" href="mailto:qc@schiberg.ru">qc@schiberg.ru</a>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+                        <div class="dealers-partners-block-right block" id="orel">
+                            <div class="partners-title">
+                                <h3 class="partners-right-title">
+                                    Название компании
+                                </h3>
+                                <p class="partners-right-subtitle">Орловская область, «ARTPLAY– Центр Дизайна»
+                                    м. Курская, 105120, Нижняя Сыромятническая,
+                                    д. 10 стр. 3, этаж 2, офис 114.1/1
+                                </p>
+                                <img class="partners-right-img" src="img/dealers/logo2.png" alt="logo">
+                            </div>
+                            <div class="partners-link">
+                                @@include('html/boxs/box-network.html')
+                                <ul class=" partners-list list-reset">
+                                    <li>Отдел качества</li>
+                                    <li>
+                                      <a class="partners-link" href="mailto:qc@schiberg.ru">qc@schiberg.ru</a>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+                        <div class="dealers-partners-block-right block" id="omsk">
+                            <div class="partners-title">
+                                <h3 class="partners-right-title">
+                                    Название компании
+                                </h3>
+                                <p class="partners-right-subtitle">Омская область, «ARTPLAY– Центр Дизайна»
+                                    м. Курская, 105120, Нижняя Сыромятническая,
+                                    д. 10 стр. 3, этаж 2, офис 114.1/1
+                                </p>
+                                <img class="partners-right-img" src="img/dealers/logo2.png" alt="logo">
+                            </div>
+                            <div class="partners-link">
+                                @@include('html/boxs/box-network.html')
+                                <ul class=" partners-list list-reset">
+                                    <li>Отдел качества</li>
+                                    <li>
+                                      <a class="partners-link" href="mailto:qc@schiberg.ru">qc@schiberg.ru</a>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+                        <div class="dealers-partners-block-right block" id="novosibirsk">
+                            <div class="partners-title">
+                                <h3 class="partners-right-title">
+                                    Название компании
+                                </h3>
+                                <p class="partners-right-subtitle">Новосибирская область, «ARTPLAY– Центр Дизайна»
+                                    м. Курская, 105120, Нижняя Сыромятническая,
+                                    д. 10 стр. 3, этаж 2, офис 114.1/1
+                                </p>
+                                <img class="partners-right-img" src="img/dealers/logo2.png" alt="logo">
+                            </div>
+                            <div class="partners-link">
+                                @@include('html/boxs/box-network.html')
+                                <ul class=" partners-list list-reset">
+                                    <li>Отдел качества</li>
+                                    <li>
+                                      <a class="partners-link" href="mailto:qc@schiberg.ru">qc@schiberg.ru</a>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+                        <div class="dealers-partners-block-right block" id="block1">
+                            <div class="partners-title">
+                                <h3 class="partners-right-title">
+                                    Название компании
+                                </h3>
+                                <p class="partners-right-subtitle">Мурманская область, «ARTPLAY– Центр Дизайна»
+                                    м. Курская, 105120, Нижняя Сыромятническая,
+                                    д. 10 стр. 3, этаж 2, офис 114.1/1
+                                </p>
+                                <img class="partners-right-img" src="img/dealers/logo2.png" alt="logo">
+                            </div>
+                            <div class="partners-link">
+                                @@include('html/boxs/box-network.html')
+                                <ul class=" partners-list list-reset">
+                                    <li>Отдел качества</li>
+                                    <li>
+                                      <a class="partners-link" href="mailto:qc@schiberg.ru">qc@schiberg.ru</a>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+                        <div class="dealers-partners-block-right block" id="block2">
+                            <div class="partners-title">
+                                <h3 class="partners-right-title">
+                                    Название компании
+                                </h3>
+                                <p class="partners-right-subtitle">Московская область, «ARTPLAY– Центр Дизайна»
+                                    м. Курская, 105120, Нижняя Сыромятническая,
+                                    д. 10 стр. 3, этаж 2, офис 114.1/1
+                                </p>
+                                <img class="partners-right-img" src="img/dealers/logo2.png" alt="logo">
+                            </div>
+                            <div class="partners-link">
+                                @@include('html/boxs/box-network.html')
+                                <ul class=" partners-list list-reset">
+                                    <li>Отдел качества</li>
+                                    <li>
+                                      <a class="partners-link" href="mailto:qc@schiberg.ru">qc@schiberg.ru</a>
+                                    </li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    @@include('html/components/solution.html')
+
     </main>
     @@include('html/boxs/ivitation.html')
 
     @@include('html/boxs/footer.html')
 
 </body>
+
 </html>

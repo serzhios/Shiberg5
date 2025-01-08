@@ -85,6 +85,7 @@
             gap: 98px;
 
             .become-left {
+
                 &__title {
                     font-family: var(--second-family);
                     font-weight: 700;
@@ -104,13 +105,18 @@
 
                 &__block {
                     display: grid;
-                    grid-template-columns: repeat(2, 256px);
-                    grid-template-rows: repeat(3, 1fr);
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(3, 177px);
                     gap: 10px;
                 }
             }
 
             .become-right {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
                 .become-right-form {
                     // margin-top: 2.125rem;
                     border-radius: 1.5625rem;
@@ -122,6 +128,7 @@
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
+                    z-index: 9999;
 
 
                     // align-items: center;
@@ -183,6 +190,310 @@
                         color: var(--label-light-primary);
                         margin-top: 30px;
                     }
+                }
+
+                .become-right-title {
+                    margin: 92px 33px 0 33px;
+                    font-family: var(--font-family);
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 124%;
+                    color: var(--label-light-primary);
+
+                }
+            }
+        }
+    }
+}
+
+.dealers-question-section {
+    background: #ededed;
+    // padding: 100px 30px 100px 30px;
+    // padding: 0 30px;
+
+    .dealers-question-conteiner {
+
+        .dealers-question-content {
+
+            .dealers-question__right {
+                width: 100%;
+                border-radius: .94rem;
+
+                background: linear-gradient(180deg, #9ba7b8 0%, #15222a 100%);
+
+                display: grid;
+                align-items: center;
+                text-align: left;
+                text-align-last: left;
+
+
+
+                .dealers-question__right-container {
+                    padding: 20px;
+                    padding-right: 30px;
+
+                    .dealers-question-h3 {
+                        font-family: var(--second-family);
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 116%;
+                        color: var(--label-light-primary);
+                        margin-bottom: 20px;
+                    }
+
+                    .dealers-question-faq-item {
+
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+                        .toggle-icon {
+                            font-size: 20px;
+                        }
+
+                        .dealers-question-faq-question {
+                            width: 100%;
+                            display: grid;
+                            grid-template-columns: 11fr 1fr;
+
+                            justify-items: stretch;
+                            justify-content: space-between;
+                            background: none;
+                            color: #fff;
+                            padding: 10px 0;
+                            border: none;
+                            text-align: left;
+                            cursor: pointer;
+                            font-family: var(--font-family);
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 185%;
+                            color: var(--label-light-primary);
+
+                            .toggle-icon {
+                                display: grid;
+                                justify-items: end;
+                                color: var(--label-light-primary);
+
+                            }
+
+
+
+                        }
+
+                        .dealers-question-faq-answer {
+                            display: none;
+                            padding: 15px;
+
+                            // background-color: #2f3d4b;
+                            // color: #b0bcc8;
+                            p {
+                                font-family: var(--font-family);
+                                font-weight: 400;
+                                font-size: 17px;
+                                color: rgba(255, 255, 255, 0.6);
+
+                            }
+                        }
+
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.dealers-stages-section {
+    .dealers-stages-conteiner {
+        .dealers-stages-content {
+            .dealers-stages-title {
+                font-family: var(--second-family);
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 116%;
+                color: var(--label-dark-black);
+                margin-bottom: 51px;
+            }
+
+            .dealers-stages-block {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+                gap: 30px;
+
+            }
+
+            .dealers-stages-block:last-child {
+                border-right: 1px solid rgba(0, 0, 0, 0.2);
+                /* Бордюр справа */
+
+            }
+        }
+    }
+}
+
+.dealers-partners-section {
+    .dealers-partners-conteiner {
+        .dealers-partners-content {
+            .dealers-partners-title {
+                font-family: var(--second-family);
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 116%;
+                color: var(--label-dark-black);
+                margin-bottom: 30px;
+            }
+
+            .dealers-partners-block {
+                display: grid;
+                // grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+                grid-template-columns: 1fr 55%;
+                column-gap: 30px;
+
+                .dealers-partners-block-left {
+                    border: 1px solid #ededed;
+                    border-radius: 15px;
+                    padding: 30px;
+
+                    .partners-region-header {
+                        display: flex;
+                        text-align: center;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 27px;
+
+                        .partners-title {
+
+                            font-family: var(--second-family);
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 154%;
+                            color: var(--label-dark-black);
+                        }
+
+                        .partners-form {
+
+                            .partners-select {
+                                border: none;
+                                font-family: var(--second-family);
+                                font-weight: 500;
+                                font-size: 17px;
+                                line-height: 120%;
+                                color: var(--label-dark-black);
+
+                                .partners-option {}
+                            }
+                        }
+
+
+                    }
+
+                    .partners-block-button {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .partners-region-button {
+                            width: 100%;
+                            display: flex;
+                            text-align: center;
+                            align-items: center;
+                            justify-content: space-between;
+                            background: #ededed;
+                            border-radius: 10px;
+                            padding: 17px 14px 16px 16px;
+                            font-family: var(--second-family);
+                            font-weight: 700;
+                            font-size: 17px;
+
+                            color: var(--label-dark-black);
+                        }
+
+                        .active {
+                            background: #06828e;
+                            color: var(--label-light-primary);
+
+                            .partners-path {
+
+
+
+                                stroke: var(--label-light-primary);
+
+                            }
+
+
+                        }
+                    }
+
+                }
+
+                .dealers-partners-block-right {
+                    border-radius: 15px;
+                    background: var(--label-dark-black);
+                    padding: 30px 27px 30px 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    display: none;
+
+
+                    .partners-title {
+                        display: grid;
+                        grid-template-rows: repeat(2, 1fr);
+                        grid-template-columns: repeat(4, 1fr);
+                        column-gap: 27px;
+
+                        .partners-right-title {
+                            grid-column: 1/span 3;
+                            font-family: var(--font-family);
+                            font-weight: 600;
+                            font-size: 27px;
+                            line-height: 135%;
+                            color: var(--label-light-primary);
+
+                        }
+
+                        .partners-right-subtitle {
+                            grid-column: 1/span 3;
+
+                            font-family: var(--font-family);
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 130%;
+                            color: var(--label-light-primary);
+                        }
+
+                        .partners-right-img {
+                            grid-column: 4/span 2;
+                            grid-row: 1/span 2;
+                        }
+
+                    }
+
+                    .partners-link {
+margin-top: 110px;
+                        .partners-list {
+                            display: flex;
+                            // justify-content: center;
+                            align-items: center;
+                            margin-top: 20px;
+
+                            li {
+                                font-family: var(--font-family);
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 130%;
+                                color: var(--label-light-primary);
+                            }
+
+                            .partners-link {
+                                margin-left: 30px;
+                            }
+                        }
+                    }
+                }
+
+                .active {
+                    display: block;
                 }
             }
         }
