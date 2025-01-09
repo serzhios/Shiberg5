@@ -25,6 +25,7 @@ import { designSlider } from "./module/designSlider.js";
 import {designQuestion} from "./module/designQuestion.js";
 import {dealersQuestion} from "./module/dealersquestion.js";
 import {dealersPartners} from "./module/dealersPartners.js";
+import {caseSlider} from "./module/caseSlider.js"
 // import {optionMiniSlider} from "./module/optionMiniSlider.js";
 document.querySelectorAll('.section6-list').forEach(function(item) {
     item.addEventListener('click', function() {
@@ -132,3 +133,4 @@ designSlider()
 designQuestion()
 dealersQuestion()
 dealersPartners()
+caseSlider()
