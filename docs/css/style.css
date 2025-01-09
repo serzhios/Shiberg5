@@ -7178,6 +7178,110 @@
   display: block;
 }
 
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 149%;
+  color: var(--label-dark-black);
+  margin-bottom: 30px;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container {
+  overflow: hidden;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-slider .case-slide {
+  border-radius: 15px;
+  padding: 25px 20px 25px 25px;
+  width: 500px;
+  box-shadow: 2px 2px 19px 0 rgba(55, 55, 55, 0.15);
+  background: #fff;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-slider .case-slide .case-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-slider .case-slide .case-title .case-name {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-slider .case-slide .case-title .case-date {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #adadad;
+  opacity: 0.8;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-slider .case-slide .case-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  padding: 21px 0 31px 0;
+  text-align: left;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-slider .case-slide .case-img {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-slider .case-slide .case-img .case-img-item {
+  border-radius: 5px;
+  width: 115px;
+  height: 75px;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-slider .case-slide .case-img .case-img-item:nth-child(4) {
+  filter: blur(2px);
+  position: relative;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-slider .case-slide .case-img .case-img-item:nth-child(4)::before {
+  content: "+2";
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  transform: translateY(-50%);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 48px;
+  color: red;
+  z-index: 9999;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-up-swiper-button {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 9999;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-up-swiper-button .case-swiper-button-next {
+  background: #000;
+  margin-top: 8px;
+  background-color: transparent;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-up-swiper-button .case-swiper-button-prev {
+  transform: rotate(180deg);
+  background-color: transparent;
+}
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-up-swiper-button .case-swiper-button-next:active path,
+.dealers-case-section .dealers-case-conteiner .dealers-case-content .dealers-case-down .case-swiper-container .case-up-swiper-button .case-swiper-button-prev:active path {
+  stroke: #000;
+}
+
 html {
   box-sizing: border-box;
 }
