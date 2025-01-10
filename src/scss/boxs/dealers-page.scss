@@ -527,6 +527,7 @@
                 // z-index: 999;
 
                 .case-swiper-container {
+                width: 1140px;
 
                     // width: 100%;
                     // height: 500px;
@@ -542,16 +543,17 @@
                         // width: 1200px;
                         // width: 453px;
                         // height: 350px;
-                        // padding: 30px 30px 30px 30px;
+                        padding: 30px 30px 30px 30px;
 
 
                         .case-slide {
                             // width: 90%;
                             // height: 277px;
+                            // text-align-last: left;
                             border-radius: 15px;
                             padding: 25px 20px 25px 25px;
-                            // height: 100%;
-                            width: 500px;
+                            height: 100%;
+                            width: 100%;
                             box-shadow: 2px 2px 19px 0 rgba(55, 55, 55, 0.15);
                             // background: #fff;
                             background: #fff;
@@ -597,8 +599,8 @@
                             .case-img {
                                 display: flex;
                                 flex-direction: row;
-                                // justify-content: space-between;
-                                gap: 15px;
+                                justify-content: space-between;
+                                // gap: 15px;
                                 // display: grid;
                                 // grid-template-columns: repeat(4, 1fr);
                                 // justify-content: space-around;
@@ -645,15 +647,29 @@
                         z-index: 9999;
 
                         .case-swiper-button-next {
-                            background: #000;
-                              margin-top: 8px;
-                            background-color: transparent;
+                            // background: #000;
+                            width: 31px;
+                            height: 31px;
+                            //   margin-top: 8px;
+                            // background-color: transparent;
+                            border-radius: 50%;
+                            padding: 8px;
+background: var(--label-light-primary);
+box-shadow: 2px 2px 17px 0 rgba(0, 0, 0, 0.12);
 
                         }
 
                         .case-swiper-button-prev {
                               transform: rotate(180deg);
-                            background-color: transparent;
+                            // background-color: transparent;
+                            width: 31px;
+                            height: 31px;
+                            //   margin-top: 8px;
+                            // background-color: transparent;
+                            border-radius: 50%;
+                            padding: 8px;
+background: var(--label-light-primary);
+box-shadow: 2px 2px 17px 0 rgba(0, 0, 0, 0.12);
 
                         }
 
