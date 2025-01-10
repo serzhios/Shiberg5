@@ -1,0 +1,42 @@
+.healthy-cart2 {
+    box-shadow: 2px 2px 17px 0 rgba(0, 0, 0, 0.12);
+    background: var(--label-light-primary);
+    border-radius: 15px;
+    padding: 25px 19px 20px 25px;
+    position:relative;
+
+    &-title {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 126%;
+        color: var(--label-dark-black);
+        margin-bottom: 15px;
+
+    }
+
+    &-desc {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 131%;
+        color: var(--label-dark-black);
+
+
+
+    }
+    &-dec {
+        position:absolute;
+        bottom: 10%;
+        right: 7%;
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: center;
+        // text-align: center;
+        // background: #06828e;
+        border: 1px solid #06828e;
+        // margin: 0 20px 20px 0;
+        width: 30px;
+        height: 30px;
+    }
+}
