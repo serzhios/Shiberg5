@@ -24,7 +24,7 @@ export function dealersPartners(){
             });
         });
 }
-    if(document.getElementId('options')){
+    if(document.getElementById('options')){
         const selectElement = document.getElementById('options');
 
         selectElement.addEventListener('change', (event) => {
@@ -32,7 +32,7 @@ export function dealersPartners(){
             const targetId = targetOption.getAttribute('data-target'); // Берём значение data-target
 
             // Скрываем все блоки с id, начинающимися с "block"
-            document.querySelectorAll('div[id^="block"]').forEach((block) => {
+            document.querySelectorAll('.dealers-partners-block-right').forEach((block) => {
                 block.style.display = 'none';
             });
 
