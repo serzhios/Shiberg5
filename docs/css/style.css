@@ -7548,7 +7548,7 @@
   grid-template-columns: repeat(3, 1fr);
 }
 
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-up {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-up {
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 32px;
@@ -7556,68 +7556,59 @@
   color: var(--label-dark-black);
   margin-bottom: 30px;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-form {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-form {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   row-gap: 20px;
   column-gap: 29px;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-form input,
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-form textarea {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-form input,
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-form textarea {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-form .produce-form-name {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-form .engineer-produce-form-name {
   grid-column: 1/span 1;
   grid-row: 1/span 1;
   padding: 12px 0 12px 15px;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-form .produce-form-phone {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-form .engineer-produce-form-phone {
   grid-column: 2/span 1;
   grid-row: 1/span 1;
   padding: 12px 0 12px 15px;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-form .produce-form-email {
-  grid-column: 1/span 2;
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-form .engineer-produce-form-email {
+  grid-column: 1/span 1;
   grid-row: 2/span 1;
   padding: 12px 0 12px 15px;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-form .produce-form-text {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-form .engineer-produce-form-firma {
+  grid-column: 2/span 1;
+  grid-row: 2/span 1;
+  padding: 12px 0 12px 15px;
+}
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-form .engineer-produce-form-text {
   grid-column: 3/span 2;
   grid-row: 1/span 2;
   padding: 12px 0 12px 15px;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-down {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 25px;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-down .produce-down__file-upload {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-bottom: 2px solid var(--label-dark-black);
-}
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-down .produce-down__file-upload label {
-  font-family: var(--second-family);
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 130%;
-  color: var(--label-dark-black);
-  margin-right: 10px;
-}
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-down .produce-down__block {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-down .produce-down__block .produce-down__checkbox {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block1 .engineer-produce-down__checkbox1 {
   display: flex;
   align-items: center;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-down .produce-down__block .produce-down__checkbox .produce-down__check-input {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block1 .engineer-produce-down__checkbox1 .engineer-produce-down__check-input1 {
   border-radius: 100%;
   width: 23px;
   height: 23px;
@@ -7627,10 +7618,10 @@
   background: #06828e;
   margin-right: 10px;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-down .produce-down__block .produce-down__checkbox .produce-down__check-input input[type=checkbox] {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block1 .engineer-produce-down__checkbox1 .engineer-produce-down__check-input1 .engineer-custom-checkbox1[id=agreement1] {
   display: none;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-down .produce-down__block .produce-down__checkbox .produce-down__check-input span {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block1 .engineer-produce-down__checkbox1 .engineer-produce-down__check-input1 .engineer-span1 {
   display: inline-block;
   width: 24px;
   /* Диаметр круга */
@@ -7646,13 +7637,13 @@
   /* Иконка "руки" при наведении */
   position: relative;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-down .produce-down__block .produce-down__checkbox .produce-down__check-input input[type=checkbox]:checked + span {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block1 .engineer-produce-down__checkbox1 .engineer-produce-down__check-input1 .engineer-custom-checkbox1[id=agreement1]:checked + span {
   background-color: #008080;
   /* Цвет фона при отметке */
   border-color: #008080;
   /* Цвет границы при отметке */
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-down .produce-down__block .produce-down__checkbox .produce-down__check-input input[type=checkbox]:checked + span::after {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block1 .engineer-produce-down__checkbox1 .engineer-produce-down__check-input1 .engineer-custom-checkbox1[id=agreement1]:checked + span::after {
   content: "";
   /* Генерируем псевдоэлемент галочки */
   display: block;
@@ -7666,18 +7657,18 @@
   top: 2px;
   left: 7px;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-down .produce-down__block .produce-down__checkbox .produce-down__check-label {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block1 .engineer-produce-down__checkbox1 .engineer-produce-down__check-label {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   line-height: 130%;
   color: var(--label-dark-black);
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-down .produce-down__block .produce-down__checkbox .produce-down__check-label .produce-down__personal-data {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block1 .engineer-produce-down__checkbox1 .engineer-produce-down__check-label .engineer-produce-down__personal-data {
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
-.design-produce-section .design-produce-conteiner .design-produce-content .produce-down .produce-down__block .produce-down__button {
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block1 .engineer-produce-down__button {
   border-radius: 10px;
   padding: 8px 59px;
   background: #06828e;
@@ -7688,6 +7679,99 @@
   text-align: center;
   color: var(--label-light-primary);
   margin-left: 89px;
+}
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block .engineer-produce-down__checkbox {
+  display: flex;
+  align-items: center;
+}
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block .engineer-produce-down__checkbox .engineer-produce-down__check-input {
+  border-radius: 100%;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background: #06828e;
+  margin-right: 10px;
+}
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block .engineer-produce-down__checkbox .engineer-produce-down__check-input .engineer-custom-checkbox[id=agreement] {
+  display: none;
+}
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block .engineer-produce-down__checkbox .engineer-produce-down__check-input .engineer-span {
+  display: inline-block;
+  width: 24px;
+  /* Диаметр круга */
+  height: 24px;
+  /* Диаметр круга */
+  border: 2px solid #008080;
+  /* Цвет границы круга */
+  border-radius: 50%;
+  /* Делает элемент кругом */
+  background-color: white;
+  /* Цвет фона */
+  cursor: pointer;
+  /* Иконка "руки" при наведении */
+  position: relative;
+}
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block .engineer-produce-down__checkbox .engineer-produce-down__check-input .engineer-custom-checkbox[id=agreement]:checked + .engineer-span {
+  background-color: #008080;
+  /* Цвет фона при отметке */
+  border-color: #008080;
+  /* Цвет границы при отметке */
+}
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block .engineer-produce-down__checkbox .engineer-produce-down__check-input .engineer-custom-checkbox[id=agreement]:checked + .engineer-span::after {
+  content: "";
+  /* Генерируем псевдоэлемент галочки */
+  display: block;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  /* Галочка */
+  position: absolute;
+  top: 2px;
+  left: 7px;
+}
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block .engineer-produce-down__checkbox .engineer-produce-down__check-label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--label-dark-black);
+}
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block .engineer-produce-down__checkbox .engineer-produce-down__check-label .engineer-produce-down__personal-data {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+.engineer-produce-section .engineer-produce-conteiner .engineer-produce-content .engineer-produce-down .engineer-produce-down__block .engineer-produce-down__button {
+  border-radius: 10px;
+  padding: 8px 59px;
+  background: #06828e;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 218%;
+  text-align: center;
+  color: var(--label-light-primary);
+  margin-left: 89px;
+}
+
+.engineer-products-section {
+  background: #15222a;
+}
+.engineer-products-section .engineer-products-conteiner .engineer-products-content .engineer-products-content__title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 149%;
+  color: var(--label-light-primary);
+  margin-bottom: 30px;
 }
 
 html {
@@ -10670,4 +10754,241 @@ body {
   font-size: 17px;
   line-height: 124%;
   color: var(--label-dark-black);
+}
+
+.engineer-products-catalog {
+  display: grid;
+  column-gap: 37px;
+  row-gap: 51px;
+  height: 100%;
+}
+.engineer-products-catalog .engineer-card-info {
+  margin-top: 10px;
+  text-align-last: left;
+}
+.engineer-products-catalog .engineer-card-info .engineer-card-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 117%;
+  color: #292929;
+}
+.engineer-products-catalog .engineer-card-info .engineer-card-price {
+  text-align-last: left;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 206%;
+  color: #06828e;
+}
+.engineer-products-catalog .engineer-card-info .engineer-card-price .engineer-old-price {
+  margin-left: 20px;
+  text-decoration: line-through;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 231%;
+  color: #7c7c7c;
+}
+.engineer-products-catalog #item-0 {
+  position: relative;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 2;
+}
+.engineer-products-catalog #item-0::after,
+.engineer-products-catalog #item-7::after {
+  content: "NEW";
+  position: relative;
+  bottom: 350px;
+  left: 135px;
+  border-radius: 20px;
+  width: 57px;
+  height: 26px;
+  background: #06828e;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  padding: 5px 12px;
+  z-index: 10;
+}
+.engineer-products-catalog #item-1 {
+  position: relative;
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 3;
+}
+.engineer-products-catalog #item-1 .badge {
+  position: relative;
+  bottom: 290px;
+  left: 87%;
+  border-radius: 20px;
+  width: 31px;
+  height: 29px;
+  background: #06828e;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding: 5px 9px;
+}
+.engineer-products-catalog #item-1::after,
+.engineer-products-catalog #item-8::after {
+  content: "%";
+  position: relative;
+  bottom: 350px;
+  left: 135px;
+  border-radius: 50px;
+  width: 31px;
+  height: 31px;
+  background: #06828e;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  padding: 6px 9px;
+}
+.engineer-products-catalog #item-2 {
+  position: relative;
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 2;
+  grid-column-end: 4;
+}
+.engineer-products-catalog #item-3 {
+  position: relative;
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+.engineer-products-catalog #item-4 {
+  position: relative;
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-end: 3;
+  grid-column-end: 4;
+}
+.engineer-products-catalog #item-5::after {
+  content: "SALE";
+  position: relative;
+  bottom: 242px;
+  right: 85px;
+  border-radius: 20px;
+  width: 57px;
+  height: 26px;
+  background: #06828e;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  padding: 5px 12px;
+  z-index: 10;
+}
+.engineer-products-catalog #item-5 {
+  position: relative;
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 4;
+}
+.engineer-products-catalog #item-5 .catalog-card__block {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 30px;
+  padding: 63px 51px 59px 35px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #15222a 0%, #9ba7b8 100%);
+}
+.engineer-products-catalog #item-5 .catalog-card__block .block-left .left-img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+}
+.engineer-products-catalog #item-5 .catalog-card__block .block-left .left-img img {
+  margin-top: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+.engineer-products-catalog #item-5 .catalog-card__block .block-right .block-right-title {
+  font-family: var(--font3);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 130%;
+  color: var(--label-light-primary);
+  text-align-last: left;
+}
+.engineer-products-catalog #item-5 .catalog-card__block .block-right .block-right-subtitle {
+  margin: 20px 0 30px 0;
+  text-align-last: left;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ebebeb;
+}
+.engineer-products-catalog #item-6 {
+  position: relative;
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 2;
+}
+.engineer-products-catalog #item-7 {
+  position: relative;
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-row-end: 5;
+  grid-column-end: 2;
+}
+.engineer-products-catalog #item-8 {
+  position: relative;
+  grid-row-start: 4;
+  grid-column-start: 2;
+  grid-row-end: 5;
+  grid-column-end: 3;
+}
+.engineer-products-catalog #item-9 {
+  position: relative;
+  grid-row-start: 4;
+  grid-column-start: 3;
+  grid-row-end: 5;
+  grid-column-end: 4;
+}
+.engineer-products-catalog #item-10 {
+  position: relative;
+  grid-row-start: 5;
+  grid-column-start: 1;
+  grid-row-end: 6;
+  grid-column-end: 3;
+}
+.engineer-products-catalog #item-11 {
+  position: relative;
+  grid-row-start: 5;
+  grid-column-start: 3;
+  grid-row-end: 6;
+  grid-column-end: 4;
+}
+.engineer-products-catalog #item-12 {
+  position: relative;
+  grid-row-start: 6;
+  grid-column-start: 2;
+  grid-row-end: 7;
+  grid-column-end: 4;
+}
+.engineer-products-catalog #item-13 {
+  position: relative;
+  grid-row-start: 6;
+  grid-column-start: 1;
+  grid-row-end: 7;
+  grid-column-end: 2;
 }
