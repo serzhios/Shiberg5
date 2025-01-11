@@ -342,11 +342,13 @@
         }
     }
 }
-.engineer-services-section{
+
+.engineer-services-section {
     background: #ededed;
-    .engineer-services-conteiner{
-        .engineer-services-content{
-            .engineer-services__title{
+
+    .engineer-services-conteiner {
+        .engineer-services-content {
+            .engineer-services__title {
                 font-family: var(--second-family);
                 font-weight: 700;
                 font-size: 32px;
@@ -354,17 +356,19 @@
                 color: var(--label-dark-black);
                 margin-bottom: 40px;
             }
-            .engineer-services__img{
+
+            .engineer-services__img {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
             }
         }
     }
 }
-.design-produce-section {
-    .design-produce-conteiner {
-        .design-produce-content {
-            .produce-up {
+
+.engineer-produce-section {
+    .engineer-produce-conteiner {
+        .engineer-produce-content {
+            .engineer-produce-up {
                 font-family: var(--second-family);
                 font-weight: 700;
                 font-size: 32px;
@@ -373,7 +377,7 @@
                 margin-bottom: 30px;
             }
 
-            .produce-form {
+            .engineer-produce-form {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-rows: repeat(2, 1fr);
@@ -390,27 +394,34 @@
                 }
 
 
-                .produce-form-name {
+                .engineer-produce-form-name {
                     grid-column: 1 / span 1;
                     grid-row: 1 / span 1;
                     padding: 12px 0 12px 15px;
                 }
 
-                .produce-form-phone {
+                .engineer-produce-form-phone {
                     grid-column: 2 / span 1;
                     grid-row: 1 / span 1;
                     padding: 12px 0 12px 15px;
 
                 }
 
-                .produce-form-email {
-                    grid-column: 1 / span 2;
+                .engineer-produce-form-email {
+                    grid-column: 1 / span 1;
                     grid-row: 2 / span 1;
                     padding: 12px 0 12px 15px;
 
                 }
 
-                .produce-form-text {
+                .engineer-produce-form-firma {
+                    grid-column: 2 / span 1;
+                    grid-row: 2 / span 1;
+                    padding: 12px 0 12px 15px;
+
+                }
+
+                .engineer-produce-form-text {
                     grid-column: 3 / span 2;
                     grid-row: 1 / span 2;
                     padding: 12px 0 12px 15px;
@@ -418,42 +429,27 @@
                 }
             }
 
-            .produce-down {
+            .engineer-produce-down {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 margin-top: 25px;
 
 
-                .produce-down__file-upload {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    border-bottom: 2px solid var(--label-dark-black);
-                    // padding-bottom: 5px;
 
-                    label {
-                        font-family: var(--second-family);
-                        font-weight: 500;
-                        font-size: 17px;
-                        line-height: 130%;
-                        color: var(--label-dark-black);
-                        margin-right: 10px;
-                    }
-                }
 
-                .produce-down__block {
+                .engineer-produce-down__block1 {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
 
-                    .produce-down__checkbox {
+                    .engineer-produce-down__checkbox1 {
                         display: flex;
                         align-items: center;
                         // padding-left: 90px;
 
                         // flex-direction: column;
-                        .produce-down__check-input {
+                        .engineer-produce-down__check-input1 {
                             border-radius: 100%;
                             width: 23px;
                             height: 23px;
@@ -463,11 +459,11 @@
                             background: #06828e;
                             margin-right: 10px;
 
-                            input[type="checkbox"] {
+                            .engineer-custom-checkbox1[id="agreement1"] {
                                 display: none;
                             }
 
-                            span {
+                            .engineer-span1 {
                                 display: inline-block;
                                 width: 24px;
                                 /* Диаметр круга */
@@ -484,14 +480,14 @@
                                 position: relative;
                             }
 
-                            input[type="checkbox"]:checked+span {
+                            .engineer-custom-checkbox1[id="agreement1"]:checked+span {
                                 background-color: #008080;
                                 /* Цвет фона при отметке */
                                 border-color: #008080;
                                 /* Цвет границы при отметке */
                             }
 
-                            input[type="checkbox"]:checked+span::after {
+                            .engineer-custom-checkbox1[id="agreement1"]:checked+span::after {
                                 content: "";
                                 /* Генерируем псевдоэлемент галочки */
                                 display: block;
@@ -510,14 +506,14 @@
 
 
 
-                        .produce-down__check-label {
+                        .engineer-produce-down__check-label {
                             font-family: var(--font-family);
                             font-weight: 400;
                             font-size: 14px;
                             line-height: 130%;
                             color: var(--label-dark-black);
 
-                            .produce-down__personal-data {
+                            .engineer-produce-down__personal-data {
                                 text-decoration: underline;
                                 text-decoration-skip-ink: none;
                             }
@@ -526,7 +522,105 @@
 
                     }
 
-                    .produce-down__button {
+                    .engineer-produce-down__button {
+                        border-radius: 10px;
+                        padding: 8px 59px;
+                        background: #06828e;
+                        font-family: var(--second-family);
+                        font-weight: 700;
+                        font-size: 17px;
+                        line-height: 218%;
+                        text-align: center;
+                        color: var(--label-light-primary);
+                        margin-left: 89px;
+                    }
+                }
+
+                .engineer-produce-down__block {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+
+                    .engineer-produce-down__checkbox {
+                        display: flex;
+                        align-items: center;
+                        // padding-left: 90px;
+
+                        // flex-direction: column;
+                        .engineer-produce-down__check-input {
+                            border-radius: 100%;
+                            width: 23px;
+                            height: 23px;
+                            display: flex;
+                            text-align: center;
+                            justify-content: center;
+                            background: #06828e;
+                            margin-right: 10px;
+
+                            .engineer-custom-checkbox[id="agreement"] {
+                                display: none;
+                            }
+
+                            .engineer-span {
+                                display: inline-block;
+                                width: 24px;
+                                /* Диаметр круга */
+                                height: 24px;
+                                /* Диаметр круга */
+                                border: 2px solid #008080;
+                                /* Цвет границы круга */
+                                border-radius: 50%;
+                                /* Делает элемент кругом */
+                                background-color: white;
+                                /* Цвет фона */
+                                cursor: pointer;
+                                /* Иконка "руки" при наведении */
+                                position: relative;
+                            }
+
+                            .engineer-custom-checkbox[id="agreement"]:checked+.engineer-span {
+                                background-color: #008080;
+                                /* Цвет фона при отметке */
+                                border-color: #008080;
+                                /* Цвет границы при отметке */
+                            }
+
+                            .engineer-custom-checkbox[id="agreement"]:checked+.engineer-span::after {
+                                content: "";
+                                /* Генерируем псевдоэлемент галочки */
+                                display: block;
+                                width: 6px;
+                                height: 12px;
+                                border: solid white;
+                                border-width: 0 2px 2px 0;
+                                transform: rotate(45deg);
+                                /* Галочка */
+                                position: absolute;
+                                top: 2px;
+                                left: 7px;
+                            }
+                        }
+
+
+
+
+                        .engineer-produce-down__check-label {
+                            font-family: var(--font-family);
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 130%;
+                            color: var(--label-dark-black);
+
+                            .engineer-produce-down__personal-data {
+                                text-decoration: underline;
+                                text-decoration-skip-ink: none;
+                            }
+                        }
+
+
+                    }
+
+                    .engineer-produce-down__button {
                         border-radius: 10px;
                         padding: 8px 59px;
                         background: #06828e;
@@ -542,6 +636,23 @@
 
             }
 
+        }
+    }
+}
+
+.engineer-products-section {
+    background: #15222a;
+
+    .engineer-products-conteiner {
+        .engineer-products-content {
+            .engineer-products-content__title {
+                font-family: var(--second-family);
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 149%;
+                color: var(--label-light-primary);
+                margin-bottom: 30px;
+            }
         }
     }
 }
