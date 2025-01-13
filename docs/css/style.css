@@ -6574,75 +6574,6 @@
   margin-left: 89px;
 }
 
-.design-question-section {
-  background: #ededed;
-}
-.design-question-section .design-question-conteiner .design-question-content .design-question__right {
-  width: 100%;
-  border-radius: 0.94rem;
-  background: var(--label-light-primary);
-  display: grid;
-  align-items: center;
-  text-align: left;
-  text-align-last: left;
-}
-.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container {
-  padding: 20px;
-  padding-right: 30px;
-}
-.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-h3 {
-  font-family: var(--second-family);
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 116%;
-  color: var(--label-dark-black);
-  margin-bottom: 20px;
-}
-.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-faq-item {
-  font-family: var(--second-family);
-  font-weight: 700;
-  font-size: 1.06rem;
-  line-height: 218%;
-  color: var(--color-wite);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-faq-item .toggle-icon {
-  font-size: 20px;
-}
-.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-faq-item .design-question-faq-question {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 11fr 1fr;
-  justify-items: stretch;
-  justify-content: space-between;
-  background: none;
-  color: #fff;
-  padding: 10px 0;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 185%;
-  color: var(--label-dark-black);
-}
-.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-faq-item .design-question-faq-question .toggle-icon {
-  display: grid;
-  justify-items: end;
-  color: #06828e;
-}
-.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-faq-item .design-question-faq-answer {
-  display: none;
-  padding: 15px;
-}
-.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-faq-item .design-question-faq-answer p {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 17px;
-  color: rgba(0, 0, 0, 0.6);
-}
-
 .design-free-section .design-free-conteiner .design-free-content {
   border-radius: 15px;
   background: linear-gradient(90deg, #15222a 0%, #818e9d 100%);
@@ -7296,7 +7227,7 @@
 }
 
 .engineer-teh-section .engineer-teh-conteiner {
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 .engineer-teh-section .engineer-teh-conteiner .engineer-teh-content .engineer-teh__block {
@@ -7343,7 +7274,7 @@
   background: #06828e;
 }
 .engineer-teh-section .engineer-teh-conteiner .engineer-teh-content .engineer-teh__block .engineer-teh__block-conteiner {
-  width: 35%;
+  width: 45%;
   backdrop-filter: blur(4px);
   background: #fbfbfb;
 }
@@ -7772,6 +7703,36 @@
   line-height: 149%;
   color: var(--label-light-primary);
   margin-bottom: 30px;
+}
+
+.engineer-why-section .engineer-why-conteiner .engineer-why-content .engineer-why-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 116%;
+  color: var(--label-dark-black);
+  margin-bottom: 30px;
+}
+.engineer-why-section .engineer-why-conteiner .engineer-why-content .engineer-why-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.engineer-docum-section {
+  background: #ededed;
+}
+.engineer-docum-section .engineer-docum-conteiner .engineer-docum-content .engineer-docum-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--label-dark-black);
+  margin-bottom: 30px;
+}
+.engineer-docum-section .engineer-docum-conteiner .engineer-docum-content .engineer-docum-block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
 }
 
 html {
@@ -10771,7 +10732,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 117%;
-  color: #292929;
+  color: var(--label-light-primary);
 }
 .engineer-products-catalog .engineer-card-info .engineer-card-price {
   text-align-last: left;
@@ -10790,19 +10751,18 @@ body {
   line-height: 231%;
   color: #7c7c7c;
 }
-.engineer-products-catalog #item-0 {
+.engineer-products-catalog #cart-0 {
   position: relative;
   grid-row-start: 1;
   grid-column-start: 1;
   grid-row-end: 2;
   grid-column-end: 2;
 }
-.engineer-products-catalog #item-0::after,
-.engineer-products-catalog #item-7::after {
+.engineer-products-catalog #cart-0::after {
   content: "NEW";
   position: relative;
   bottom: 350px;
-  left: 135px;
+  left: 275px;
   border-radius: 20px;
   width: 57px;
   height: 26px;
@@ -10815,14 +10775,14 @@ body {
   padding: 5px 12px;
   z-index: 10;
 }
-.engineer-products-catalog #item-1 {
+.engineer-products-catalog #cart-1 {
   position: relative;
   grid-row-start: 1;
   grid-column-start: 2;
   grid-row-end: 2;
   grid-column-end: 3;
 }
-.engineer-products-catalog #item-1 .badge {
+.engineer-products-catalog #cart-1 .badge {
   position: relative;
   bottom: 290px;
   left: 87%;
@@ -10838,12 +10798,11 @@ body {
   text-align: center;
   padding: 5px 9px;
 }
-.engineer-products-catalog #item-1::after,
-.engineer-products-catalog #item-8::after {
+.engineer-products-catalog #cart-1::after {
   content: "%";
   position: relative;
   bottom: 350px;
-  left: 135px;
+  left: 295px;
   border-radius: 50px;
   width: 31px;
   height: 31px;
@@ -10855,140 +10814,341 @@ body {
   text-align: center;
   padding: 6px 9px;
 }
-.engineer-products-catalog #item-2 {
+.engineer-products-catalog #cart-2 {
   position: relative;
   grid-row-start: 1;
   grid-column-start: 3;
   grid-row-end: 2;
   grid-column-end: 4;
 }
-.engineer-products-catalog #item-3 {
+.engineer-products-catalog #cart-3 {
   position: relative;
   grid-row-start: 2;
   grid-column-start: 1;
   grid-row-end: 3;
   grid-column-end: 3;
 }
-.engineer-products-catalog #item-4 {
+.engineer-products-catalog #cart-4 {
   position: relative;
   grid-row-start: 2;
   grid-column-start: 3;
   grid-row-end: 3;
   grid-column-end: 4;
 }
-.engineer-products-catalog #item-5::after {
-  content: "SALE";
-  position: relative;
-  bottom: 242px;
-  right: 85px;
-  border-radius: 20px;
-  width: 57px;
-  height: 26px;
-  background: #06828e;
-  font-family: var(--font-family);
-  font-weight: 600;
-  font-size: 12px;
-  color: #fff;
+
+.engineer-docum-cart {
+  box-shadow: 2px 2px 17px 0 rgba(0, 0, 0, 0.12);
+  background: var(--label-light-primary);
+  border-radius: 15px;
+  padding: 15px 15px 20px 20px;
+}
+.engineer-docum-cart .engineer-docum-cart-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
   text-align: center;
-  padding: 5px 12px;
-  z-index: 10;
 }
-.engineer-products-catalog #item-5 {
-  position: relative;
-  grid-row-start: 3;
-  grid-column-start: 2;
-  grid-row-end: 4;
-  grid-column-end: 4;
+.engineer-docum-cart .engineer-docum-cart-block .engineer-docum-cart-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
 }
-.engineer-products-catalog #item-5 .catalog-card__block {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 30px;
-  padding: 63px 51px 59px 35px;
-  border-radius: 10px;
-  background: linear-gradient(180deg, #15222a 0%, #9ba7b8 100%);
-}
-.engineer-products-catalog #item-5 .catalog-card__block .block-left .left-img {
-  border-radius: 20px;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-}
-.engineer-products-catalog #item-5 .catalog-card__block .block-left .left-img img {
-  margin-top: 10px;
-  width: 100%;
-  object-fit: cover;
-}
-.engineer-products-catalog #item-5 .catalog-card__block .block-right .block-right-title {
-  font-family: var(--font3);
+.engineer-docum-cart .engineer-docum-cart-block .engineer-docum-cart-link .engineer-docum-cart-title {
+  margin-right: 10px;
+  font-family: var(--second-family);
   font-weight: 400;
-  font-size: 25px;
-  line-height: 130%;
-  color: var(--label-light-primary);
-  text-align-last: left;
+  font-size: 12px;
+  line-height: 308%;
+  text-align: right;
+  color: #7c7c7c;
 }
-.engineer-products-catalog #item-5 .catalog-card__block .block-right .block-right-subtitle {
-  margin: 20px 0 30px 0;
-  text-align-last: left;
+.engineer-docum-cart .engineer-docum-cart-subtitle {
   font-family: var(--font-family);
   font-weight: 500;
+  font-size: 16px;
+  line-height: 131%;
+  color: var(--label-dark-black);
+}
+
+.engineer-reclama-section {
+  background: linear-gradient(180deg, #06828e 0%, #15222a 100%);
+}
+.engineer-reclama-section .engineer-reclama-conteiner .engineer-reclama-content {
+  gap: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.engineer-reclama-section .engineer-reclama-conteiner .engineer-reclama-content .engineer-reclama__left-title {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--label-light-primary);
+}
+.engineer-reclama-section .engineer-reclama-conteiner .engineer-reclama-content .engineer-reclama__left-subtitle {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--label-light-primary);
+  margin: 14px 0 40px 0;
+}
+.engineer-reclama-section .engineer-reclama-conteiner .engineer-reclama-content .engineer-reclama__left .engineer-reclama__title {
+  display: flex;
+  flex-direction: row;
+}
+.engineer-reclama-section .engineer-reclama-conteiner .engineer-reclama-content .engineer-reclama__left .engineer-reclama__title-text {
+  font-family: var(--font-family);
+  font-weight: 400;
   font-size: 14px;
-  line-height: 150%;
-  color: #ebebeb;
+  line-height: 157%;
+  color: var(--label-light-primary);
+  margin-left: 9px;
 }
-.engineer-products-catalog #item-6 {
-  position: relative;
-  grid-row-start: 3;
-  grid-column-start: 1;
-  grid-row-end: 4;
-  grid-column-end: 2;
+.engineer-reclama-section .engineer-reclama-conteiner .engineer-reclama-content .engineer-reclama__left .engineer-reclama__title:nth-child(2) {
+  margin: 20px 0 20px 0;
 }
-.engineer-products-catalog #item-7 {
-  position: relative;
-  grid-row-start: 4;
-  grid-column-start: 1;
-  grid-row-end: 5;
-  grid-column-end: 2;
+.engineer-reclama-section .engineer-reclama-conteiner .engineer-reclama-content .engineer-reclama__left-text {
+  margin-bottom: 72px;
+  text-align: left;
 }
-.engineer-products-catalog #item-8 {
-  position: relative;
-  grid-row-start: 4;
-  grid-column-start: 2;
-  grid-row-end: 5;
-  grid-column-end: 3;
+.engineer-reclama-section .engineer-reclama-conteiner .engineer-reclama-content .engineer-reclama__left-text .text:nth-child(2) {
+  margin: 20px 0 20px 0;
 }
-.engineer-products-catalog #item-9 {
-  position: relative;
-  grid-row-start: 4;
-  grid-column-start: 3;
-  grid-row-end: 5;
-  grid-column-end: 4;
+.engineer-reclama-section .engineer-reclama-conteiner .engineer-reclama-content .engineer-reclama__left-button {
+  background: #06828e;
+  border-radius: 10px;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 218%;
+  text-align: center;
+  color: var(--label-light-primary);
+  padding: 18px 46px;
 }
-.engineer-products-catalog #item-10 {
+.engineer-reclama-section .engineer-reclama-conteiner .engineer-reclama-content .engineer-reclama__right {
+  width: 572px;
+  height: 441px;
   position: relative;
-  grid-row-start: 5;
-  grid-column-start: 1;
-  grid-row-end: 6;
-  grid-column-end: 3;
 }
-.engineer-products-catalog #item-11 {
-  position: relative;
-  grid-row-start: 5;
-  grid-column-start: 3;
-  grid-row-end: 6;
-  grid-column-end: 4;
+.engineer-reclama-section .engineer-reclama-conteiner .engineer-reclama-content .engineer-reclama__right-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
 }
-.engineer-products-catalog #item-12 {
-  position: relative;
-  grid-row-start: 6;
-  grid-column-start: 2;
-  grid-row-end: 7;
-  grid-column-end: 4;
+.engineer-reclama-section .engineer-reclama-conteiner .engineer-reclama-content .engineer-reclama__right-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  background: none;
 }
-.engineer-products-catalog #item-13 {
+
+.design-question-section {
+  background: #ededed;
+}
+.design-question-section .design-question-conteiner .design-question-content .design-question__right {
+  width: 100%;
+  border-radius: 0.94rem;
+  background: var(--label-light-primary);
+  display: grid;
+  align-items: center;
+  text-align: left;
+  text-align-last: left;
+}
+.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container {
+  padding: 20px;
+  padding-right: 30px;
+}
+.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-h3 {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 116%;
+  color: var(--label-dark-black);
+  margin-bottom: 20px;
+}
+.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-faq-item {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 1.06rem;
+  line-height: 218%;
+  color: var(--color-wite);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-faq-item .toggle-icon {
+  font-size: 20px;
+}
+.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-faq-item .design-question-faq-question {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 11fr 1fr;
+  justify-items: stretch;
+  justify-content: space-between;
+  background: none;
+  color: #fff;
+  padding: 10px 0;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 185%;
+  color: var(--label-dark-black);
+}
+.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-faq-item .design-question-faq-question .toggle-icon {
+  display: grid;
+  justify-items: end;
+  color: #06828e;
+}
+.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-faq-item .design-question-faq-answer {
+  display: none;
+  padding: 15px;
+}
+.design-question-section .design-question-conteiner .design-question-content .design-question__right .design-question__right-container .design-question-faq-item .design-question-faq-answer p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__left {
+  display: flex;
+  flex-direction: column;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__left-header {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 116%;
+  color: var(--label-dark-black);
+  text-align: left;
+  margin-bottom: 30px;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__left-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__left-content .engineer-academy__wrapper {
   position: relative;
-  grid-row-start: 6;
-  grid-column-start: 1;
-  grid-row-end: 7;
-  grid-column-end: 2;
+  width: 347px;
+  height: 251px;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__left-content .engineer-academy__wrapper .engineer-academy-video-thumbnail {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__left-content .engineer-academy__wrapper .engineer-academy__text-play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  background: none;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__left-content .engineer-academy__text-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 35px 0 52px 0;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__left-content .engineer-academy__text-content .engineer-academy-text-block {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__left-content .engineer-academy__text-content .engineer-academy-text-block .engineer-academy-text-title1 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 15px;
+  color: var(--label-dark-black);
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__left-content .engineer-academy__text-play-button {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 218%;
+  text-align: center;
+  color: var(--label-light-primary);
+  border-radius: 10px;
+  background: #06828e;
+  padding: 7px 50px;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__center {
+  display: flex;
+  flex-direction: column;
+  width: 354px;
+  box-shadow: 2px 2px 17px 0 rgba(0, 0, 0, 0.12);
+  background: var(--label-light-primary);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__center-img {
+  border-radius: 15px;
+  width: 314px;
+  height: 151px;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__center-img .center-img {
+  width: 100%;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__center-date {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--label-dark-black);
+  margin: 30px 0 10px 0;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__center-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 135%;
+  color: var(--label-dark-black);
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__center-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  color: var(--label-dark-black);
+  margin: 10px 0 30px 0;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__center-link {
+  align-items: center;
+  display: flex;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__center-link span {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--label-dark-black);
+  margin-right: 5px;
+}
+.engineer-academy-section .engineer-academy-conteiner .engineer-academy-content .engineer-academy__right .block1 {
+  border-radius: 15px;
+  width: 354px;
+  box-shadow: 2px 2px 17px 0 rgba(0, 0, 0, 0.12);
+  background: var(--label-light-primary);
+  padding: 20px;
 }

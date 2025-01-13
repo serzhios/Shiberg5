@@ -1,0 +1,44 @@
+.engineer-docum-cart {
+    box-shadow: 2px 2px 17px 0 rgba(0, 0, 0, 0.12);
+    background: var(--label-light-primary);
+    border-radius: 15px;
+    padding: 15px 15px 20px 20px;
+
+    .engineer-docum-cart-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        align-items: center;
+        text-align: center;
+
+        .engineer-docum-cart-img {
+            // width: 100%;
+        }
+
+        .engineer-docum-cart-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+
+            .engineer-docum-cart-title {
+                margin-right: 10px;
+                font-family: var(--second-family);
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 308%;
+                text-align: right;
+                color: #7c7c7c;
+            }
+        }
+    }
+
+    .engineer-docum-cart-subtitle {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 131%;
+        color: var(--label-dark-black);
+    }
+}

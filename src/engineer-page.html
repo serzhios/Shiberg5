@@ -209,11 +209,41 @@
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="container">
-            <div class="content"></div>
+    <section class="section engineer-why-section">
+        <div class="container engineer-why-conteiner">
+            <div class="content engineer-why-content">
+
+<h3 class="engineer-why-title">Почему выбирают нас?</h3>
+<div class="engineer-why-block">
+    @@include('html/components/design-cart.html',{"title":"01", "subtitle":"Качественные системы и решения", "text":"Позволяют пройти экспертизу проектно-сметной документации без замечаний и дополнительных вопросов"})
+    @@include('html/components/design-cart.html',{"title":"02", "subtitle":"Проработанные узлы изоляции", "text":"На этапе проектирования позволяют минимизировать вопросы подрядчиков на этапе монтажа"})
+    @@include('html/components/design-cart.html',{"title":"03", "subtitle":"Увеличим срок эксплуатации", "text":"За счет устранения потенциальных ошибок на этапе проектирования"})
+</div>
+
+            </div>
         </div>
     </section>
+    <section class="section engineer-docum-section">
+        <div class="container engineer-docum-conteiner">
+            <div class="content engineer-docum-content">
+                <h3 class="engineer-docum-title">
+                    Документы
+                </h3>
+                <div class="engineer-docum-block">
+                    @@include('html/components/engineer-docum-cart.html',{"urlImg":"img/engineer/pozh.svg", "maneDoc":"9 документов", "title":"Пожарные заключения ВНИИПО"})
+                    @@include('html/components/engineer-docum-cart.html',{"urlImg":"img/engineer/sert.svg", "maneDoc":"808 документов", "title":"Сертификаты"})
+                    @@include('html/components/engineer-docum-cart.html',{"urlImg":"img/engineer/ruck.svg", "maneDoc":"25 документов", "title":"Руководства по проектированию, монтажу и эксплуатации"})
+                    @@include('html/components/engineer-docum-cart.html',{"urlImg":"img/engineer/inst.svg", "maneDoc":"153 документа", "title":"Инструкции по монтажу"})
+
+                </div>
+            </div>
+        </div>
+    </section>
+@@include('html/components/engineer-reclama.html')
+@@include('html/components/question-section.html')
+@@include('html/components/engineer-academy.html')
+
+
 </main>
 @@include('html/boxs/ivitation.html')
 
