@@ -1,7 +1,7 @@
 .engineer-teh-section {
 
     .engineer-teh-conteiner {
-        max-width: 1200px;
+        max-width: 1140px;
         margin: 0 auto;
 
         .engineer-teh-content {
@@ -74,7 +74,7 @@
                     // position: absolute;
                     // top: 0%;
                     // left: 0%;
-                    width: 35%;
+                    width: 45%;
                     // height: 100%;
                     // width: 568px;
                     // height: 510px;
@@ -652,6 +652,49 @@
                 line-height: 149%;
                 color: var(--label-light-primary);
                 margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+.engineer-why-section {
+    .engineer-why-conteiner {
+        .engineer-why-content {
+            .engineer-why-title {
+                font-family: var(--second-family);
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 116%;
+                color: var(--label-dark-black);
+                margin-bottom: 30px;
+            }
+
+            .engineer-why-block {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 30px;
+                // grid-template-rows: repeat(2, 1fr);
+            }
+        }
+    }
+}
+
+.engineer-docum-section {
+    background: #ededed;
+    .engineer-docum-conteiner {
+        .engineer-docum-content {
+            .engineer-docum-title {
+                font-family: var(--second-family);
+                font-weight: 700;
+                font-size: 32px;
+
+                color: var(--label-dark-black);
+                margin-bottom: 30px;
+            }
+            .engineer-docum-block{
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 30px;
             }
         }
     }
